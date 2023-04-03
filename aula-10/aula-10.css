@@ -1,0 +1,131 @@
+.text-shadow-1 {
+    font-size: x-large;
+    font-weight: bolder;
+    text-shadow: 5px 5px 3px lightgray;
+}
+
+.text-shadow-2 {
+    font-size: x-large;
+    font-weight: bolder;
+    text-shadow: 0 0 10px red;
+}
+
+.box-shadow-container {
+    width: 70%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.box-shadow {
+    width: 20%;
+    height: 300px;
+    box-shadow: 10px 10px 10px lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.box-shadow:hover {
+    transform: scale(1.1, 1.1);
+}
+
+@font-face {
+    font-family: dancing-script;
+    src: url(../fonts/DancingScript-VariableFont_wght.ttf);
+}
+
+.web-font {
+    font-family: dancing-script;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.translate {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.translate:hover {
+    transform: translate(250px, -250px);
+}
+
+.rotate {
+    margin: 10px 0;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rotate:hover {
+    transform: rotate(-40deg);
+}
+
+.scale {
+    margin: 30px 0;
+    width: 200px;
+    height: 300px;
+    box-shadow: 10px 10px 10px lightgray;
+    display: flex;
+    border: solid 1px lightgray;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.scale:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.rotate-x {
+    margin: 10px 0;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rotate-x:hover {
+    transform: rotateX(180deg);
+}
+
+.rotate-y {
+    margin: 10px 0;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rotate-y:hover {
+    transform: rotateY(180deg);
+}
+
+.rotate-z {
+    margin: 10px 0;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rotate-z:hover {
+    transform: rotateZ(180deg);
+}
