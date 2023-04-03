@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 6</title>
+    <link rel="stylesheet" href="./aula-6.css">
+</head>
+
+<body>
+    <!--
+         2.13. Posicoes
+            - relavivo 
+                i. A posicao antiga do elemento movido permanece vazia, i.e, nao e ocupado pelos outros elementos;
+                ii. A contagem, ou seja, o deslocamento e' feito em relacao a posiccao inicial do elemento
+            - absoluto
+                i. O elemento pai deve ser relativo;
+                ii. O elemento posicionado como absoluto sai do layout;
+                iii. A posicao antiga do elemento movido e' ocupada pelos outros elementos que continuam dentro do layout;
+            - fixo
+                i. O elemento posicionado como fixo sai do layout;
+                ii. O elemento permanece fixo no lugar posicionado mesmo que a pagina sofra um scroll
+        2.14. float
+            - left
+                i. O conteuto que nao sofreu o float, fica arredor do elemento que sofreu o float
+            - right
+                i. O conteuto que nao sofreu o float, fica arredor do elemento que sofreu o float
+            - clear
+                - i. O conteuto que nao sofreu o float, permanece no seu respecrivo lugar, \
+                ou seja, nao fica arredor do elemento que sofreu o float
+        2.15. Z-index
+        2.16. Overflow
+            - hidden
+                - Ocuta o conteudo transbordado
+            - scroll
+                - cria uma funcionalidade de scroll para visualizar o conetudo transfordado
+            - visible (padrao)
+                - mostra o conteudo transbordado
+                
+        
+    -->
+
+    <h1>II. CSS (Parte 5)</h1>
+
+    <h2>Posicoes</h2>
+    <h3>Relativa</h3>
+    <div style="border-style: solid;">
+        <div class="quadrado" id="q1">
+            Quadrado 1
+        </div>
+        <div class="quadrado" id="q2">
+            Quadrado 2
+        </div>
+        <div class="quadrado" id="q3">
+            Quadrado 3
+        </div>
+    </div>
+
+    <h3>Absoluto</h3>
+    <div style="border-style: solid;" id="div-pai">
+        <div class="quadrado" id="q4">
+            Quadrado 4
+        </div>
+        <div class="quadrado" id="q5">
+            Quadrado 5
+        </div>
+        <div class="quadrado" id="q6">
+            Quadrado 6
+        </div>
+    </div>
+
+    <div id="fixo">
+        <h3>Fixo</h3>
+        <p>Botao usando o<br> posicionamento fixo</p>
+    </div>
+
+    <h2 style="margin-top: 400px;">Float</h2>
+    <div>
+        <h2>Biografia do Isac Newton (sem o clear)</h2>
+
+        <img src="./isac.png" alt="" id="imagem-1">
+
+        <p id="texto-1">
+            Em 1666, Newton foi o único a perceber a lei que seria básica para a compreensão de vários fenômenos – antes
+            inexplicáveis – que ocorriam no universo.
+
+            Ao cair da árvore, a mais célebre maçã da história da ciência, motivou em Newton a ideia de gravitação
+            universal. “Por que caiu a maçã?”, partindo dessa pergunta, chegou à descoberta de uma das mais importantes
+            leis científicas.
+
+            Isaac Newton elaborou então uma das mais fundamentais de todas as leis, a “lei da gravitação universal”.
+            Nela sustentou e provou que cada partícula de matéria atrai toda partícula outra, de matéria.
+
+            Não é só a Terra que puxa para seu centro a maçã da árvore, mas também a maçã puxa a Terra, essa lei
+            aplica-se a todos os planetas. O Sol atrai a Terra, esta atrai a Lua e a Lua atrai a Terra.
+
+            Newton mostrou que a força entre os corpos depende de sua massa, como da proximidade deles. E ensinou como
+            calcular essas forças.
+
+            Em 1666, Newton foi o único a perceber a lei que seria básica para a compreensão de vários fenômenos – antes
+            inexplicáveis – que ocorriam no universo.
+
+            Ao cair da árvore, a mais célebre maçã da história da ciência, motivou em Newton a ideia de gravitação
+            universal. “Por que caiu a maçã?”, partindo dessa pergunta, chegou à descoberta de uma das mais importantes
+            leis científicas.
+
+            Isaac Newton elaborou então uma das mais fundamentais de todas as leis, a “lei da gravitação universal”.
+            Nela sustentou e provou que cada partícula de matéria atrai toda partícula outra, de matéria.
+
+            Não é só a Terra que puxa para seu centro a maçã da árvore, mas também a maçã puxa a Terra, essa lei
+            aplica-se a todos os planetas. O Sol atrai a Terra, esta atrai a Lua e a Lua atrai a Terra.
+
+            Newton mostrou que a força entre os corpos depende de sua massa, como da proximidade deles. E ensinou como
+            calcular essas forças.
+            Em 1666, Newton foi o único a perceber a lei que seria básica para a compreensão de vários fenômenos – antes
+            inexplicáveis – que ocorriam no universo.
+
+            Ao cair da árvore, a mais célebre maçã da história da ciência, motivou em Newton a ideia de gravitação
+            universal. “Por que caiu a maçã?”, partindo dessa pergunta, chegou à descoberta de uma das mais importantes
+            leis científicas.
+
+            Isaac Newton elaborou então uma das mais fundamentais de todas as leis, a “lei da gravitação universal”.
+            Nela sustentou e provou que cada partícula de matéria atrai toda partícula outra, de matéria.
+
+            Não é só a Terra que puxa para seu centro a maçã da árvore, mas também a maçã puxa a Terra, essa lei
+            aplica-se a todos os planetas. O Sol atrai a Terra, esta atrai a Lua e a Lua atrai a Terra.
+
+            Newton mostrou que a força entre os corpos depende de sua massa, como da proximidade deles. E ensinou como
+            calcular essas forças.
+            Em 1666, Newton foi o único a perceber a lei que seria básica para a compreensão de vários fenômenos – antes
+            inexplicáveis – que ocorriam no universo.
+
+            Ao cair da árvore, a mais célebre maçã da história da ciência, motivou em Newton a ideia de gravitação
+            universal. “Por que caiu a maçã?”, partindo dessa pergunta, chegou à descoberta de uma das mais importantes
+            leis científicas.
+
+            Isaac Newton elaborou então uma das mais fundamentais de todas as leis, a “lei da gravitação universal”.
+            Nela sustentou e provou que cada partícula de matéria atrai toda partícula outra, de matéria.
+
+            Não é só a Terra que puxa para seu centro a maçã da árvore, mas também a maçã puxa a Terra, essa lei
+            aplica-se a todos os planetas. O Sol atrai a Terra, esta atrai a Lua e a Lua atrai a Terra.
+
+            Newton mostrou que a força entre os corpos depende de sua massa, como da proximidade deles. E ensinou como
+            calcular essas forças.
+            Em 1666, Newton foi o único a perceber a lei que seria básica para a compreensão de vários fenômenos – antes
+            inexplicáveis – que ocorriam no universo.
+
+            Ao cair da árvore, a mais célebre maçã da história da ciência, motivou em Newton a ideia de gravitação
+            universal. “Por que caiu a maçã?”, partindo dessa pergunta, chegou à descoberta de uma das mais importantes
+            leis científicas.
+
+            Isaac Newton elaborou então uma das mais fundamentais de todas as leis, a “lei da gravitação universal”.
+            Nela sustentou e provou que cada partícula de matéria atrai toda partícula outra, de matéria.
+
+            Não é só a Terra que puxa para seu centro a maçã da árvore, mas também a maçã puxa a Terra, essa lei
+            aplica-se a todos os planetas. O Sol atrai a Terra, esta atrai a Lua e a Lua atrai a Terra.
+
+            Newton mostrou que a força entre os corpos depende de sua massa, como da proximidade deles. E ensinou como
+            calcular essas forças.
+        </p>
+    </div>
+
+    <div>
+        <h2>Biografia do Isac Newton (Com o clear)</h2>
+
+        <img src="./isac.png" alt="" id="imagem-2">
+
+        <p id="texto-2">
+            Em 1666, Newton foi o único a perceber a lei que seria básica para a compreensão de vários fenômenos – antes
+            inexplicáveis – que ocorriam no universo.
+
+            Ao cair da árvore, a mais célebre maçã da história da ciência, motivou em Newton a ideia de gravitação
+            universal. “Por que caiu a maçã?”, partindo dessa pergunta, chegou à descoberta de uma das mais importantes
+            leis científicas.
+
+            Isaac Newton elaborou então uma das mais fundamentais de todas as leis, a “lei da gravitação universal”.
+            Nela sustentou e provou que cada partícula de matéria atrai toda partícula outra, de matéria.
+
+            Não é só a Terra que puxa para seu centro a maçã da árvore, mas também a maçã puxa a Terra, essa lei
+            aplica-se a todos os planetas. O Sol atrai a Terra, esta atrai a Lua e a Lua atrai a Terra.
+
+            Newton mostrou que a força entre os corpos depende de sua massa, como da proximidade deles. E ensinou como
+            calcular essas forças.
+
+            Em 1666, Newton foi o único a perceber a lei que seria básica para a compreensão de vários fenômenos – antes
+            inexplicáveis – que ocorriam no universo.
+
+            Ao cair da árvore, a mais célebre maçã da história da ciência, motivou em Newton a ideia de gravitação
+            universal. “Por que caiu a maçã?”, partindo dessa pergunta, chegou à descoberta de uma das mais importantes
+            leis científicas.
+
+            Isaac Newton elaborou então uma das mais fundamentais de todas as leis, a “lei da gravitação universal”.
+            Nela sustentou e provou que cada partícula de matéria atrai toda partícula outra, de matéria.
+
+            Não é só a Terra que puxa para seu centro a maçã da árvore, mas também a maçã puxa a Terra, essa lei
+            aplica-se a todos os planetas. O Sol atrai a Terra, esta atrai a Lua e a Lua atrai a Terra.
+
+            Newton mostrou que a força entre os corpos depende de sua massa, como da proximidade deles. E ensinou como
+            calcular essas forças.
+            Em 1666, Newton foi o único a perceber a lei que seria básica para a compreensão de vários fenômenos – antes
+            inexplicáveis – que ocorriam no universo.
+
+            Ao cair da árvore, a mais célebre maçã da história da ciência, motivou em Newton a ideia de gravitação
+            universal. “Por que caiu a maçã?”, partindo dessa pergunta, chegou à descoberta de uma das mais importantes
+            leis científicas.
+
+            Isaac Newton elaborou então uma das mais fundamentais de todas as leis, a “lei da gravitação universal”.
+            Nela sustentou e provou que cada partícula de matéria atrai toda partícula outra, de matéria.
+
+            Não é só a Terra que puxa para seu centro a maçã da árvore, mas também a maçã puxa a Terra, essa lei
+            aplica-se a todos os planetas. O Sol atrai a Terra, esta atrai a Lua e a Lua atrai a Terra.
+
+            Newton mostrou que a força entre os corpos depende de sua massa, como da proximidade deles. E ensinou como
+            calcular essas forças.
+            Em 1666, Newton foi o único a perceber a lei que seria básica para a compreensão de vários fenômenos – antes
+            inexplicáveis – que ocorriam no universo.
+
+            Ao cair da árvore, a mais célebre maçã da história da ciência, motivou em Newton a ideia de gravitação
+            universal. “Por que caiu a maçã?”, partindo dessa pergunta, chegou à descoberta de uma das mais importantes
+            leis científicas.
+
+            Isaac Newton elaborou então uma das mais fundamentais de todas as leis, a “lei da gravitação universal”.
+            Nela sustentou e provou que cada partícula de matéria atrai toda partícula outra, de matéria.
+
+            Não é só a Terra que puxa para seu centro a maçã da árvore, mas também a maçã puxa a Terra, essa lei
+            aplica-se a todos os planetas. O Sol atrai a Terra, esta atrai a Lua e a Lua atrai a Terra.
+
+            Newton mostrou que a força entre os corpos depende de sua massa, como da proximidade deles. E ensinou como
+            calcular essas forças.
+            Em 1666, Newton foi o único a perceber a lei que seria básica para a compreensão de vários fenômenos – antes
+            inexplicáveis – que ocorriam no universo.
+
+            Ao cair da árvore, a mais célebre maçã da história da ciência, motivou em Newton a ideia de gravitação
+            universal. “Por que caiu a maçã?”, partindo dessa pergunta, chegou à descoberta de uma das mais importantes
+            leis científicas.
+
+            Isaac Newton elaborou então uma das mais fundamentais de todas as leis, a “lei da gravitação universal”.
+            Nela sustentou e provou que cada partícula de matéria atrai toda partícula outra, de matéria.
+
+            Não é só a Terra que puxa para seu centro a maçã da árvore, mas também a maçã puxa a Terra, essa lei
+            aplica-se a todos os planetas. O Sol atrai a Terra, esta atrai a Lua e a Lua atrai a Terra.
+
+            Newton mostrou que a força entre os corpos depende de sua massa, como da proximidade deles. E ensinou como
+            calcular essas forças.
+        </p>
+    </div>
+
+    <h2>Z-Index</h2>
+    <div style="border-style: solid; position: relative;">
+        <div id="q01">
+
+        </div>
+        <div id="q02">
+
+        </div>
+        <div id="q03">
+
+        </div>
+    </div>
+
+    <h2 style="margin: 300px 0 0 0;">Overflow</h2>
+    <div id="overflow">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque deleniti rem commodi praesentium quod
+            excepturi maxime sequi dignissimos nesciunt,
+            aspernatur quidem error saepe asperiores in quo mollitia nisi voluptatibus suscipit?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque deleniti rem commodi praesentium quod
+            excepturi maxime sequi dignissimos nesciunt,
+            aspernatur quidem error saepe asperiores in quo mollitia nisi voluptatibus suscipit?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque deleniti rem commodi praesentium quod
+            excepturi maxime sequi dignissimos nesciunt,
+            aspernatur quidem error saepe asperiores in quo mollitia nisi voluptatibus suscipit?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque deleniti rem commodi praesentium quod
+            excepturi maxime sequi dignissimos nesciunt,
+            aspernatur quidem error saepe asperiores in quo mollitia nisi voluptatibus suscipit?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque deleniti rem commodi praesentium quod
+            excepturi maxime sequi dignissimos nesciunt,
+            aspernatur quidem error saepe asperiores in quo mollitia nisi voluptatibus suscipit?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque deleniti rem commodi praesentium quod
+            excepturi maxime sequi dignissimos nesciunt,
+            aspernatur quidem error saepe asperiores in quo mollitia nisi voluptatibus suscipit?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque deleniti rem commodi praesentium quod
+            excepturi maxime sequi dignissimos nesciunt,
+            aspernatur quidem error saepe asperiores in quo mollitia nisi voluptatibus suscipit?
+        </p>
+    </div>
+</body>
+
+</html>

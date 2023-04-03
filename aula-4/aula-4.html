@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4</title>
+    <link rel="stylesheet" href="./aula-4.css">
+</head>
+<body>
+    <!--
+        2.7. Height (altura) e Width (largura) - Medidas absolutas e relativas
+            - Medidas absolutas (uma medida fixa e nao varia de acordo com a tela)
+                - Pixel (px)
+                - Centimentros (cm)
+            - Medidas relativas (uma medida variavel e varia de acordo com a tela)
+                - rem // rem
+                - percentagem (calcula a medida com base no elemento pai)
+            - 100vh (toda a altura do ecra)
+            - 100vw (toda a largura do ecra)
+        2.8. Textos
+            - Text-align (e aplicado no componente pai do texto)
+            - Text-decoration
+            - Letter-spacing
+            - Fontes
+                - font family
+                - font size
+                - font style
+                - font-weight (Peso do texto - expessura)
+            - text-shadow (clonar e descolar o texto) -> text-shadow: para-baixo para-direita cor;
+
+    -->
+
+    <h1>II. CSS (parte 3)</h1>
+    <h2>Medidas absolutas</h2>
+    <div id="pixel">
+        Eu  sou um container com 200px de largura e 100px de altura.
+    </div>
+    <div id="cent">
+        Eu  sou um container com 30cm de largura e 10cm de altura.
+    </div>
+    <h2>Medidas relativas</h2>
+    <div id="percent">
+        Eu  sou um container com 30% de largura;
+    </div>
+
+    <h2>Exemplo de Medidas Absolutas VS Medidas Relativas</h2>
+    <div style="background-color: aqua; height: 300px; width: 800px; margin: 10px;">
+        Container com medida absoluta
+    </div>
+    <div style="background-color: aqua; height: 300px; width: 75%; margin: 10px;">
+        Container com medida relativa
+    </div>
+
+    <h2>Fontes</h2>
+    <p id="font-weight-1">Eu sou um Exemplo da propriedade css font-weight</p>
+    <p id="font-weight-2">Eu sou outro Exemplo da propriedade css font-weight</p>
+    <br>
+    <p id="font-size">Eu sou outro Exemplo da propriedade css font-weight</p>
+    <br>
+    <p id="font-style">Eu sou outro Exemplo da propriedade css font-weight</p>
+    <br>
+    <p id="font-family">Eu sou outro Exemplo da propriedade css font-weight</p>
+    <br>
+    <br>
+    <h2>Textos</h2>
+    <p id="text-dec">Este paragrafo contem um exemplo da propriedade do text-decoration</p>
+    <br>
+    <p id="letter-spec">Este paragrafo contem um exemplo da propriedade do  letter-spacing</p>
+    <div id="center">
+        <p>Um pequeno texto gaajakd kkdk kdkd aikand adndnakdoad  Um pequeno texto Um pequeno texto Um pequeno texto Um pequeno texto Um pequeno texto Um pequeno texto Um pequeno texto Um pequeno texto Um pequeno texto texttt </p>
+    </div>
+
+    <h2>Text Shadow</h2>
+
+    <div style="background-color: black; height: 100px; padding: 50px;">
+        <h2 id="shadow">Um Exemplo de text shadow</h2>
+    </div>
+</body>
+</html>

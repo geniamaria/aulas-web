@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2</title>
+    <link rel="stylesheet" href="./aula-2.css">
+    <style>
+        #intern {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        II. CSS (Parte 1)
+
+        2.1. Formas de adicionar o CSS
+            - Inline (estilizamos dentro da tag)
+            - Interno (estilizamos no mesmo ficheiro (dentro da tag <head>))
+            - Externo (estilizamos em um ficheiro diferente) NB: devemos importar o ficheiro
+
+        2.2. Selectores
+                Selector de elemento (p, a, h1, etc)
+                Selector por ID - id="nomeDoId" (seleciona um unico elemento)
+                selector por classe - class="nomeDaClasse" (seleciona um grupo de elementos)
+                selector universal - representa-se usando um * (aplica-se a todos os elementos da pagina)
+
+        2.3. Cores
+                - Cores padrao (ja vem com o css)
+                - Cores em Hexadecimal (sao cores variaveis em codigo de 6 digitos e deve iniciar com um #)
+                - Cores em RGB (sao cores variaveis em codigo de 3 numeros separados de 2 digitos e usamos a funcao rgba(a, b, c))
+                - Cores em RGBA (o mesmo que rgb mas com certa opacidade que varia de 0 a 1)
+            Site de cores: coolors.co
+    -->
+
+    <h1>II. CSS (Parte 1)</h1>
+
+    <h2>2.1. Formas de adicionar o css</h2>
+
+    <h3>CSS Inline</h3>
+    <p style="color: red;">Este paragrafo foi estilizado usando o CSS Inline</p>
+
+    <h3>CSS Interno</h3>
+    <p id="intern">Este paragrafo foi estilizado usando o CSS Interno eu sou o unico com cor verde (porque tenho um ID)</p>
+
+    <h3>CSS Externo</h3>
+    <p id="externo">Este paragrafo foi estilizado usando o CSS Externo e eu sou o unico com cor amarela (porque tenho um ID)</p>
+
+    <h2>Selectores</h2>
+    <h3>Selector de elementos</h3>
+    <h4>Eu sou um titulo que foi estilizado usando o selector de elemento</h4>
+    <h4>Eu tambem sou um titulo que foi estilizado usando o selector de elemento</h4>
+    <p>Eu sou paragrafo que foi estilizado usando o selector de elemento</p>
+    <p>Eu tambem sou paragrafo que foi estilizado usando o selector de elemento</p>
+    <p>Na verdade, todos os paragrafos tem o mesmo fundo que eu.</p>
+
+    <h3>Selector por classes</h3>
+    <p class="classe">Eu e os outros paragrafos desta seccao somos semelhantes porque fazemos parte da mesma classe</p>
+    <p class="classe">Sim, fazemos!</p>
+    <p class="classe">Sim, fazemos!</p>
+    <p class="classe">Sim, fazemos!</p>
+
+    <h2>Cores</h2>
+    <h3>Cores padrao</h3>
+    <p id="cor-padrao">Este paraagrafo foi estilizado usando cores padrao.</p>
+
+    <h3>Cores em Hexadecimal</h3>
+    <p id="cor-hexadecimal">Este paraagrafo foi estilizado usando cores em hexadecimal.</p>
+
+    <h3>Cores em RGB</h3>
+    <p id="cor-rgb">Este paraagrafo foi estilizado usando cores em RGB.</p>
+
+    <h3>Cores em RGBA</h3>
+    <p id="cor-rgba">Este paraagrafo foi estilizado usando cores em RGBA.</p>
+</body>
+</html>

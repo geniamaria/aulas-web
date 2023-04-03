@@ -1,0 +1,106 @@
+#sub {
+    text-decoration: none;
+}
+#link-color {
+    text-decoration: none;
+    color: green;
+}
+#link-cursor {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+}
+#link-visited:visited {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+.link-aulas {
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.link-aulas:hover {
+    background-color: aqua;
+}
+
+#circle {
+    list-style-type: circle;
+}
+#square {
+    list-style-type: square;
+}
+#none {
+    list-style-type: none;
+}
+#custom {
+    list-style-image: url('../aula-3/facebook.png');
+}
+#roman {
+    list-style-type: upper-roman;
+}
+#alpha {
+    list-style-type: upper-alpha;
+}
+#table-1,  #table-1 td, #table-1 th {
+    border: solid 1px black;
+}
+
+#table-2,  #table-2 td, #table-2 th {
+    border: solid 1px black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+#table-3 th {
+    background-color: blue;
+    color: white;
+}
+
+#table-4 th {
+    background-color: blue;
+    color: white;
+}
+
+#table-4 tr:nth-child(even) {
+    background-color: gray;
+    color: black;
+}
+.block {
+    display: block;
+}
+.inline {
+    display: inline;
+}
+.hidden {
+    display: none;
+}
+#hover {
+    width: fit-content;
+    border: solid 1px black;
+}
+#hover:hover .hidden {
+    display: block;
+}
+#menu {
+    background-color: blue;
+    color: white;
+    font-weight: 500;
+    width: 300px;
+    list-style-type: none;
+    text-align: center;
+    padding: 10px 0;
+    margin: auto;
+    border-radius: 10px;
+}
+#menu li {
+    padding: 0 10px;
+    cursor: pointer;
+}
+#menu li+li {
+    border-left: solid;
+}

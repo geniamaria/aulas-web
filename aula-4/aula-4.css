@@ -1,0 +1,70 @@
+#pixel {
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+}
+
+#cent {
+    margin-top: 10px;
+    width: 30cm;
+    height: 10cm;
+    background-color: blue;
+    color: white;
+}
+
+#div-pai {
+    width: 700px;
+    height: 400px;
+    background-color: black;
+    color: white;
+}
+
+#percent {
+    width: 50%;
+    height: 50%;
+    background-color: blue;
+    color: white;
+}
+
+#font-weight-1 {
+    font-weight: 800;
+}
+
+#font-weight-2 {
+    font-weight: bolder;
+}
+
+#font-size {
+    font-size: xx-large;
+}
+
+
+
+#font-style {
+    font-style: italic;
+}
+
+#font-family {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#text-dec {
+    text-decoration: underline;
+}
+
+#letter-spec {
+    letter-spacing: 10px;
+}
+
+#center {
+    border: solid 2px red; /* border: border-style border-width border-color */
+    width: 30%;
+    text-align: justify;
+
+}
+
+#shadow {
+    color: gold;
+    text-shadow: 10px 10px red;
+}

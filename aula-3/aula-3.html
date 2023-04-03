@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3</title>
+    <link rel="stylesheet" href="./aula-3.css">
+</head>
+<body>
+    <!--
+                2.3.1. Cores de texto (color)
+                2.3.2. Cores de Fundo (background-color)
+        2.4. Fundos (Backgrounds)
+            - background-color (cores solidas)
+            - Gradient (cores variaveis) -> background-image: linear-gradient(direcao, cor1, cor2);
+            - background-image (imagem de fundo) -> background-image: url('caminho')
+                - background-size
+                    - cover (ajusta a imagem ao tamanho do cantainer)
+                    - repeat (repete a mesma imagem ate ocupar todo o espaco do container)
+            TIP: Site para imagens gratis: https://unsplash.com/
+        2.5. Bordas
+                - Border Style (solid [linha], dashed[tracinhos], dotted[pontinhos], double[dois tracinhos]) - estilo
+                - border color - cor da borda
+                - border width - tamanho da borda
+                - border radius - curvatura da borda
+        2.5. Margens - sao os espacos fora da borda
+            margin: valor; (o elemento tera espacoes fora da borda nos 4 lados)
+            margin-bottom: valor; (o elemento tera espaco do lado de fora da borda de baixo)
+            .
+            .
+            .
+            (idem para os outros lados)
+            margin: em cima direira embaixo esquerda; (margens no sentido horario, comecando de cima)
+            margin: vertical horizontal;
+        2.6. Padding - o mesmo que as margens, porem dentro das bordas
+    -->
+    <h1>II. CSS (Parte 2)</h1>
+
+    <h4>2.3.1. Cores de texto</h4>
+    <p id="text-color">Eu sou um texto com cor verde.</p>
+
+    <h4>2.3.2. Cores de fundo</h4>
+    <p id="background-color">Eu sou um texto com fundo verde.</p>
+
+    <h2>2.4. Fundos</h2>
+
+    <h3>Background-color</h3>
+    <div id="bg-color">
+        Elemento usando background-color
+    </div>
+    <h3>Gradiente</h3>
+    <div id="bg-gradient">
+
+    </div>
+    <h3>Background-image</h3>
+    <div id="bg-image">
+        
+    </div>
+
+    <h2>Bordas</h2>
+    <div id="border-1">
+        Eu sou um elemento com borda solida
+    </div>
+    <div id="border-2">
+        Eu sou um elemento com borda com pontos
+    </div>
+    <div id="border-3">
+        Eu sou um circulo
+    </div>
+
+    <h2>Margens</h2>
+    <div id="margem-1">
+        Eu sou um elemento com margens:<br>
+        10px a esquerda;<br>
+        20px a direita;<br>
+        15px em cima;<br>
+        30px em baixo;
+    </div>
+    <div id="margem-2">
+        Eu sou um elemento com margens:<br>
+        10px a esquerda e direita;<br>
+        20px em cima e embaixo;<br>
+    </div>
+
+    <h2>Paddings</h2>
+    <div id="padding-1">
+        Eu sou um elemento com paddings:<br>
+        10px a esquerda;<br>
+        20px a direita;<br>
+        15px em cima;<br>
+        30px em baixo;
+    </div>
+    <div id="padding-2">
+        Eu sou um elemento com paddings:<br>
+        10px a esquerda e direita;<br>
+        20px em cima e embaixo;<br>
+    </div>
+</body>
+</html>

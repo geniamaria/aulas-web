@@ -1,0 +1,102 @@
+#div-pai {
+    position: relative;
+    border-style: solid;
+}
+
+.quadrado {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border: solid 2px red;
+}
+
+#q2 {
+    position: relative;
+    top: 0;
+    left: 200px;
+}
+
+#q3 {
+    position: relative;
+    left: 400px;
+}
+
+#q5 {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+#q6 {
+    position: absolute;
+    top: 200px;
+    left: 400px;
+}
+
+#fixo {
+    width: fit-content;
+    border: solid 3px blue;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 20px;
+    background-color: aqua;
+}
+
+#imagem-1 {
+    float: left;
+    padding: 10px;
+}
+
+#imagem-2 {
+    float: right;
+    padding: 10px;
+}
+
+#texto-2 {
+    clear: both;
+}
+
+#q01 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border: solid 2px red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#q02 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border: solid 2px blue;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    z-index: 1;
+}
+
+#q03 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    border: solid 2px green;
+    position: absolute;
+    top: 0;
+    left: 60px;
+    z-index: 2;
+}
+
+#overflow {
+    border: solid 2px black;
+    padding: 10px;
+    height: 300px;
+    overflow: scroll;
+}
+
+#overflow p {
+    width: 400px;
+}

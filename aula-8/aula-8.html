@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./aula-8.css">
+</head>
+<body>
+    <!--
+        2.20. Box model
+            - "Todos elementos HTML devem ser vistos como uma caixa. E essa caixa tem bordas laterais, espacamentos
+                internos (padding) e espacamentos externos (margin) que devem ser sempre considerados"
+        2.21. Flexbox
+            - Flex container (Display: flex;)
+            
+            - flex-direction
+                - row (coloca os elementos na horizontal) || Eixo principal e' horizontal e o eixo secundario e' o verrtical
+                - row-reverse (coloca os elementos na horizontal, em ordem reversa) || Eixo principal e' horizontal e o eixo secundario e' o verrtical
+                - colum (coloca os elementos na horizontal) || Eixo principal e' vertical e o eixo secundario e' o horizontal
+                - column-reverse (coloca os elementos na horizontal, em ordem reversa) || Eixo principal e' vertical e o eixo secundario e' o horizontal
+                - gap (espaco entre os elementos)
+
+            - justify-content (Posiciona elementos no eixo principal)
+                - start (posiciona os elemento no inicio)
+                - center (posiciona os elemento no centro)
+                - end (posiciona os elementos no fim)
+                - space-between (fixa o primeiro e o segundo no inicio e no fim, respectivamente e depois distribui os elementos com espacoes iguais entre eles)
+                - space-around (distribui os elementos com espacos entre eles)
+                - evenly (distribui os elementos com espacos IGUAIS entre eles)
+
+            - align-items (Posiciona elementos no eixo secundario)
+                - start
+                - center
+                - end
+            - flex-wrap (organiza os elementos de tal forma que caibam dentro do containar sem alterar as suas medidas)
+                - wrap
+                - nowrap
+            - Order (Ordena os elementos. ATT: e' colocado os elementos filhos)
+            - grow (Indica o tamanho de cada elemento em relacao ao outro)
+    -->
+
+    <h1>II. CSS</h1>
+
+    <h2>Box Model</h2>
+    <div id="box-model">
+        <h4>Este container contem:</h4>
+        <ul>
+            <li>Largura: 200px</li>
+            <li>Altura: 300px</li>
+            <li>Borda em cima e embaixo: 5px</li>
+            <li>Border a esquerda e a direita: 10px</li>
+            <li>Padding em cima e em baixo: 20px</li>
+            <li>Padding a esquerda e a direita: 15px</li>
+            <li>Margens em cima e em baixo: 10px</li>
+            <li>Margens a esquerda e a direita: 20px</li>
+        </ul>
+
+        <h4>No total temos:</h4>
+        <ul>
+            <li>Largura: 290px</li>
+            <li>Altura: 350px</li>
+        </ul>
+    </div>
+
+    <h2>FlexBox</h2>
+    <div id="flex-container">
+        <div style="order: 2; flex-grow: 1;">
+            1
+        </div>
+        <div style="order: 4; flex-grow: 2;">
+            2
+        </div>
+        <div style="order: 1; flex-grow: 4;">
+            3
+        </div>
+        <div style="order: 3; flex-grow: 8;">
+            4
+        </div>
+    </div>
+
+    <h3>Flex Wrap</h3>
+    <div id="flex-wrap-container">
+        <div>
+            1
+        </div>
+        <div>
+            2
+        </div>
+        <div>
+            3
+        </div>
+        <div>
+            4
+        </div>
+        <div>
+            5
+        </div>
+        <div>
+            6
+        </div>
+        <div>
+            7
+        </div>
+        <div>
+            8
+        </div>
+    </div>
+</body>
+</html>

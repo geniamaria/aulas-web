@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 7</title>
+    <link rel="stylesheet" href="./aula-7.css">
+</head>
+<body>
+    <!--
+        2.17. Pseudo-classes (:pseudo-classe)
+            - first-child - estiliza o primeiro elemento de um conjunto de elementos
+            - last-child - estiliza o ultimo elemento de um conjunto de elementos
+            - nth-child() - estiliza um elemento em uma dada posicao
+
+        2.18. Pseudo-elementos (::pseudo-elemento)
+            - first-letter - estiliza a primeira letra de um texto
+            - first-line - estiliza a primeira linha
+            - before - coloca elementos antes de um elemento
+            - after - coloca elementos depois de um elemento
+            - marker - estiliza os marcadores das listas
+            - selection - estiliza o texto selecionado
+
+        2.19. Forms
+            - Estilizar por atributo -> elemento[atributo="valor"]
+            - outline -> a linha externa quando o campo esta activo
+    -->
+
+    <h1>II. CSS (Parte 6)</h1>
+
+    <h2>Pseudo-classes</h2>
+
+    <h1>first-child</h1>
+    <ul id="first-child-list">
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+    </ul>
+
+    <div id="first-child-paragraph">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae exercitationem magnam ut illum hic? Magni animi assumenda inventore, nemo cum 
+            repudiandae mollitia qui officia necessitatibus porro, earum omnis officiis placeat.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae exercitationem magnam ut illum hic? Magni animi assumenda inventore, nemo cum 
+            repudiandae mollitia qui officia necessitatibus porro, earum omnis officiis placeat.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae exercitationem magnam ut illum hic? Magni animi assumenda inventore, nemo cum 
+            repudiandae mollitia qui officia necessitatibus porro, earum omnis officiis placeat.
+        </p>
+    </div>
+
+    <h1>last-child</h1>
+    <ul id="last-child-list">
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+    </ul>
+
+    <div id="last-child-paragraph">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae exercitationem magnam ut illum hic? Magni animi assumenda inventore, nemo cum 
+            repudiandae mollitia qui officia necessitatibus porro, earum omnis officiis placeat.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae exercitationem magnam ut illum hic? Magni animi assumenda inventore, nemo cum 
+            repudiandae mollitia qui officia necessitatibus porro, earum omnis officiis placeat.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae exercitationem magnam ut illum hic? Magni animi assumenda inventore, nemo cum 
+            repudiandae mollitia qui officia necessitatibus porro, earum omnis officiis placeat.
+        </p>
+    </div>
+
+    <h1>nth-child()</h1>
+    <ul id="nth-child-list">
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+    </ul>
+
+    <div id="nth-child-paragraph">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae exercitationem magnam ut illum hic? Magni animi assumenda inventore, nemo cum 
+            repudiandae mollitia qui officia necessitatibus porro, earum omnis officiis placeat.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae exercitationem magnam ut illum hic? Magni animi assumenda inventore, nemo cum 
+            repudiandae mollitia qui officia necessitatibus porro, earum omnis officiis placeat.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae exercitationem magnam ut illum hic? Magni animi assumenda inventore, nemo cum 
+            repudiandae mollitia qui officia necessitatibus porro, earum omnis officiis placeat.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae exercitationem magnam ut illum hic? Magni animi assumenda inventore, nemo cum 
+            repudiandae mollitia qui officia necessitatibus porro, earum omnis officiis placeat.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae exercitationem magnam ut illum hic? Magni animi assumenda inventore, nemo cum 
+            repudiandae mollitia qui officia necessitatibus porro, earum omnis officiis placeat.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae exercitationem magnam ut illum hic? Magni animi assumenda inventore, nemo cum 
+            repudiandae mollitia qui officia necessitatibus porro, earum omnis officiis placeat.
+        </p>
+    </div>
+
+    <h2>Pseudo-elementos</h2>
+    <h3>first-letter</h3>
+    <p id="first-letter">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque maxime eos doloremque pariatur quos minima esse aliquam autem doloribus 
+        ullam quibusdam expedita tenetur assumenda, dicta ex quidem, eaque harum. Voluptas?
+    </p>
+
+    <h3>first-line</h3>
+    <p id="first-line">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque maxime eos doloremque pariatur quos minima esse aliquam autem doloribus 
+        ullam quibusdam expedita tenetur assumenda, dicta ex quidem, eaque harum. Voluptas?
+    </p>
+    
+    <h3>Before</h3>
+    <ul>
+        <li class="before">Item</li>
+        <li class="before">Item</li>
+        <li class="before">Item</li>
+    </ul>
+
+    <h3>After</h3>
+    <ul>
+        <li class="after">Item</li>
+        <li class="after">Item</li>
+        <li class="after">Item</li>
+    </ul>
+
+    <h3>Marker</h3>
+    <ul>
+        <li class="marker">Item</li>
+        <li class="marker">Item</li>
+        <li class="marker">Item</li>
+    </ul> 
+
+    <h3>Selection</h3>
+    <p id="select">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil porro obcaecati distinctio consequatur fuga, atque aliquam ut dolores voluptatem 
+        eum illo magnam ducimus expedita fugit provident blanditiis est. Doloremque, sequi.
+    </p>
+
+    <h2>Formularios</h2>
+
+    <form>
+        <div>
+            <label>Primeiro nome</label>
+            <input type="text" placeholder="Introduza o seu primeiro nome" required >
+        </div>
+        <div>
+            <label>Segundo nome</label>
+            <input type="text" placeholder="Introduza o seu Segundo nome" required >
+        </div>
+        <div>
+            <label>Email</label>
+            <input type="email" placeholder="Introduza o email" required >
+        </div>
+        <div>
+            <label>Data de nascimeto</label>
+            <input type="date" required >
+        </div>
+        <div>
+            <input type="submit" value="Submeter">
+            <input type="reset" value="Cancelar">
+        </div>
+    </form>
+</body>
+</html>
