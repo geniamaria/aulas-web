@@ -5,14 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./aula-11.css">
 </head>
 <body>
     <!--
         - Transtion
+            - transition-property: propriedade; //o a propriedade que deve sofrer a transicao
+            - transition-duration: tempo; // e' o tempo de a transicao vai levar
+            - transition-time-function: tipo; // e' o tipo de de efeito que desejo aplicar a transicao
+                linear
+                ease-in // inicia devagar e termina rapido
+                ease-out // o inverso do ease-in
+                ease-in-out // inicia a transformacao devagar, fica rapido no meio e termina rapido;
+            - transition-delay: tempo; // o tempo que vai levar para iniciar a transicao   
+
+            forma simplificada => transition: propriedade tempo tipo atraso;
 
         - Animation
+            - @keyframes //criar uma animacao
+            - animation-name // nome da a inimacao
+            - animation-duration // duracao da animacao
+            - animation-delay // atraso da animacao
+            - animation-time-function // tipo da animacao
+                linear
+                ease-in // inicia devagar e termina rapido
+                ease-out // o inverso do ease-in
+                ease-in-out // inicia a transformacao devagar, fica rapido no meio e termina rapido;
 
         - Terminar a versao desktop do projecto
     -->
+
+    <h1>II. CSS</h1>
+    <h2>transition</h2>
+    <div class="transition">
+        Um bloco que sofre efeitos da propriedade Transition
+    </div>
+
+    <h2>Animation</h2>
+    <nav class="animation">
+        <ul>
+            <li>Inicio</li>
+            <li>Sobre nos</li>
+            <li>Servicos</li>
+            <li>Contactos</li>
+        </ul>
+    </nav>
 </body>
 </html>
