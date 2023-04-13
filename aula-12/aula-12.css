@@ -1,0 +1,26 @@
+/*
+Estilos para celular
+*/
+@media (min-width: 320px) {
+    .background {
+        background-color: red;
+    }
+}
+
+/*
+Estilos para tablet
+*/
+@media (min-width: 481px) {
+    .background {
+        background-color: green;
+    }
+}
+
+/*
+Estilos para computador
+*/
+@media (min-width: 1024px) {
+    .background {
+        background-color: blue;
+    }
+}
