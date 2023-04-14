@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <!--
+        1. Definição de Script e Introdução ao JavaScript
+        1.1. Inserir codigo JavaScript na pagina web
+            - Dentro do ficheiro HTML (Ou quaquer outra linguagem)
+            - Ficheiro externo 
+        2. Console, alert e prompt
+        3. Comentários
+        4. variaveis e declaracao de variaveis (const, var e let)
+        5. tipo de dados
+            - numerios
+            - strings
+            - boolean
+            - arrays *
+            - objectos *
+    -->
+
+    <h1>JavaScript (Parte 1)</h1>
+
+    <h2>Definição de Script e Introdução ao JavaScript</h2>
+    <p><strong>JavaScript: </strong> E' uma linguagem de programacao usada para manipular elementos na web.</p>
+    <p><strong>Script: </strong> E' um pequeno programa que e' inserido dentro de outro programa</p>
+
+    <ul>
+        <li><strong>Console.log():</strong> Serve para mostrar alguma informacao no consola do browser (E' geralmente usado para testes)</li>
+        <li><strong>prompt():</strong> E' usando para recolher alguma informacao atraves de uma caixa de dialogo</li>
+        <li><strong>alert():</strong> E' usado para exibir uma informacao em uma caixa de dialogo.</li>
+    </ul>
+
+    <H2>Variaveis e declaracao de variaveis</H2>
+
+    <h3>Regras para a delcaracao de variaveis</h3>
+    <ol>
+        <li>os nomes das variaveis devem iniciar com uma letra ou underscore (_)</li>
+        <li>os nomes das variaveis nao podem iniciar com um numero ou um outro caractere especial</li>
+        <li>os nomes das variaves nao podem conter espacos</li>
+        <li>o JavaScript e' sensivel a maiusculas (case sensitive), i.e, Variavel e' diferente de variavel.</li>
+    </ol>
+
+    <h3>Declaracao de variaveis</h3>
+
+    <p>As variaveis podem ser declaradas usando const, var ou let</p>
+
+    <h4>const</h4>
+    <p>Usamos o const quando declaramos uma constante (o valor nao muda).</p>
+    <p>Exemplo: <code>const pi = 3.14;</code></p>
+
+    <h4>var</h4>
+    <p>Usamos o var quando declaramos uma variavel (o valor pode ser mudado).</p>
+    <p>Exemplo: <code>var area = 23.54;</code></p>
+
+    <h4>let</h4>
+    <p>Usamos o let quando declaramos uma variavel (o valor pode ser mudado).</p>
+    <p>Exemplo: <code>let nome = "Ana";</code></p>
+
+    <h4>Diferencas entre o var e o let</h4>
+    <ul>
+        <li>usando o let nao e' posssivel aceder uma variavel antes de inicializa-la (ocorre um erro).
+            Mas com o var e' possivel e dara' o resultado indefinido
+        </li>
+        <li>
+            O let e' limitado pelos escopos do programa enquanto o var nao.
+        </li>
+        <li>
+            E' recomendado usar let
+        </li>
+    </ul>
+
+    <h2>Tipos de dado</h2>
+
+    <p>O JavaScript e' uma linguem sem tipagem.</p>
+
+    <h3>Numerico (number)</h3>
+
+    <p>Exemplos:</p>
+    <code>let idade = 12;</code>
+    <code>const pi = 3.14;</code>
+
+    <h3>String</h3>
+    <p>Exemplos:</p>
+    <code>let nome = "Ana";</code>
+    <code>let estadoCivil = "Solteira";</code>
+
+    <h3>boolean</h3>
+    <p>Exemplos:</p>
+    <code>boolean isMarried = true;</code>
+    
+    
+    <script src="./aula-13.js"></script>
+</body>
+</html>
