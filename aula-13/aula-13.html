@@ -17,11 +17,16 @@
         3. Comentários
         4. variaveis e declaracao de variaveis (const, var e let)
         5. tipo de dados
-            - numerios
+            - number
             - strings
             - boolean
+            - null
+            - undefined
             - arrays *
             - objectos *
+            
+        6. typeof
+        7. Conversão e Coerção
     -->
 
     <h1>JavaScript (Parte 1)</h1>
@@ -40,7 +45,7 @@
 
     <h3>Regras para a delcaracao de variaveis</h3>
     <ol>
-        <li>os nomes das variaveis devem iniciar com uma letra ou underscore (_)</li>
+        <li>os nomes das variaveis devem iniciar com uma letra, underscore (_) ou simbolo de dolar ($)</li>
         <li>os nomes das variaveis nao podem iniciar com um numero ou um outro caractere especial</li>
         <li>os nomes das variaves nao podem conter espacos</li>
         <li>o JavaScript e' sensivel a maiusculas (case sensitive), i.e, Variavel e' diferente de variavel.</li>
@@ -77,23 +82,107 @@
 
     <h2>Tipos de dado</h2>
 
-    <p>O JavaScript e' uma linguem sem tipagem.</p>
+    <p>O JavaScript e' uma linguem de tipagem dinamica.</p>
 
-    <h3>Numerico (number)</h3>
+    <h3>Number</h3>
+    <p><strong>Number: </strong> Tipo de dado numerico que representa interiros e pontos flutuates (float)</p>
 
     <p>Exemplos:</p>
     <code>let idade = 12;</code>
     <code>const pi = 3.14;</code>
 
     <h3>String</h3>
+    <p><strong>String: </strong> Representa uma sequencia de caracteres (textos)</p>
+    <p><strong>Obs: </strong> Textos devem estar entre aspas duplas (""), aspas simples ('') ou apostrofre(``)</p>
+    <p><strong>Escape(\): </strong> E' usada quando queremos imprimir caracteres especiais (aspas, nova linha, tab, etc)</p>
+    <p>Alguns caracteres especiais:</p>
+    <ul>
+        <li>\n: Quebra de linha</li>
+        <li>\t: Tab</li>
+        <li>TPC: Pesquisar outros caracteres especiais.</li>
+    </ul>
     <p>Exemplos:</p>
     <code>let nome = "Ana";</code>
     <code>let estadoCivil = "Solteira";</code>
 
+    <p><strong>Concatenacao (+): </strong>E' a juncao de duas ou mais strings ou uma string e um numeros</p>
+
     <h3>boolean</h3>
+    <p><strong>Boolean: </strong>E' usando para representar valores booleanos (verdadeiro ou false)</p>
     <p>Exemplos:</p>
-    <code>boolean isMarried = true;</code>
+    <code>let isMarried = true;</code><br>
+    <code>let isAlive = false;</code>
     
+    <h3>undefined</h3>
+    <p><strong>Undefined: </strong>E' um tipo de dado que representa variaveis que foram declaradas mas nao inicializadas</p>
+
+    <p>Exemplos:</p>
+    <code>let nome;</code><br>
+    <code>console.log(nome); //undefined</code>
+
+    <h3>null</h3>
+    <p><strong>null: </strong>Tal como o undefined, o null representa variaveis vazias.</p>
+
+    <h3>typeof</h3>
+
+    <p><strong>typeof: </strong>Mostra do tipo de dado de um valor</p>
+    <p>Exemplos:</p>
+    <code>console.log(typeof "Joao"); //string</code><br>
+    <code>console.log(typeof 14); //number</code><br>
+    <code>console.log(typeof null); //object</code><br>
+
+    <h2>Exercicio:</h2>
+    <p>Qual sera a saida do seguinte codigo?</p>
+    <code>let year = 1997;</code><br>
+    <code>let bio = `Eu sou um desenvolvedor web nascindo no ano ${year};`</code><br>
+    <code>console.log(typeof bio)</code>
+    
+    <p>Por que o tipo e' esse? PORQUE HOUVE COERCAO</p>
+
+    <h2>Conversão e Coerção</h2>
+
+    <p><strong>Conversão: </strong>E' quando nos convertemos manualmente um tipo de dado para o outro.</p>
+    <ul>
+        <li>
+            <strong>Number(string): </strong>Converte uma string para um numero<br>
+            <code>
+                let variable = "2022";<br>
+                let number = Number(variable);<br>
+                console.log(variable, typeof variable, number, typeof number); //2022 string 2022 number
+            </code>
+        </li>
+        <li>
+            <strong>String(number): </strong>Converte um numero para uma string<br>
+            <code>
+                let numero = 10;<br>
+                let str = String(numero);<br>
+                console.log(numero, typeof numero, str, typeof str); //10 number 10 string
+            </code>
+        </li>
+        <li>
+            <strong>Boolean(valor):</strong> O que faz?
+            <code>
+                Coloque um codigo como exemplo aqui.
+                let variable = false;
+                let bool = Boolean(variable);
+                console.log(variable, typeof variable)
+            </code>
+        </li>
+    </ul>
+
+
+    <p><strong>Coerção: </strong>E' quando o JS converte implicitamente (por baixo dos panos) os tipos de dado.</p>
+
+    <p>NOTAS:</p>
+    <ul>
+        <li> Quando usamos adicao (+) o valor do tipo numerico e' convertido para o tipo string</li>
+        <li>Quando usamos subtracao (-) o valor do tipo string e' convertido para o tipo numerio</li>
+    </ul>
+
+    <h2>Exercicio</h2>
+    <p>Qual sera' o resultado da seguinte operacao?</p>
+    <code>let operacao = "20" + 5 + "10" - "7";</code><br>
+    <code>console.log(operacao);</code>
     
     <script src="./aula-13.js"></script>
 </body>

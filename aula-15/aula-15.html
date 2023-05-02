@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="aula-15.css">
+</head>
+<body>
+    <!--
+        1. Operacoes Logicas
+            - maior que (>)
+            - menor que (<)
+            - maior ou igual que (>=)
+            - menor ou igual que (<=)
+            - igual a (== e ===)
+                -Diferenca entre =, == e ===
+            - And (&&)
+            - Or (||)
+            - Not (!)
+        3. Estruturas de decisao
+            - if
+            - if-else
+            - switch
+    -->
+    
+    <h1>JavaScript (Parte 3)</h1>
+    <h2>Operacoes Logicas</h2>
+
+    <h3>Maior que (>)</h3>
+    <p>
+        Dados os numeros 'a' e 'b', a operacao 'a > b' ira' retornar 'True' se e somente se a for maior que b. caso contrario
+        a operacao ira retornar falso.
+    </p>
+    <p>Exemplo:</p>
+    <code>let a = 5;</code><br>
+    <code>let b = 1</code><br>
+    <code>console.log(a > b) //True</code><br>
+    <code>console.log(b > a) //False</code>
+
+    <h3>Menor que (<)</h3>
+    <p>
+        Dados os numeros 'a' e 'b', a operacao 'a < b' ira' retornar 'True' se e somente se 'a' for menor que 'b'. caso contrario
+        a operacao ira retornar falso.
+    </p>
+    <p>Exemplo:</p>
+    <code>let a = 5;</code><br>
+    <code>let b = 10</code><br>
+    <code>console.log(a < b) //True</code><br>
+    <code>console.log(b < a) //False</code>
+
+    <h3>Maior ou igual a (>=)</h3>
+    <p>
+        Dados os numeros 'a' e 'b', a operacao 'a >= b' ira' retornar 'True' se e somente se 'a' for maior ou igual a 'b'. caso contrario
+        a operacao ira retornar falso.
+    </p>
+    <p>Exemplo:</p>
+    <code>let a = 5;</code><br>
+    <code>let b = 1</code><br>
+    <code>let c = 5</code><br>
+    <code>console.log(a >= b) //True</code><br>
+    <code>console.log(a >= c) //True</code>
+
+    <h3>Menor ou igual a (<=)</h3>
+    <p>
+        Dados os numeros 'a' e 'b', a operacao 'a <= b' ira' retornar 'True' se e somente se 'a' for Menor ou igual a 'b'. caso contrario
+        a operacao ira retornar falso.
+    </p>
+    <p>Exemplo:</p>
+    <code>let a = 5;</code><br>
+    <code>let b = 1</code><br>
+    <code>let c = 5</code><br>
+    <code>console.log(a <= b) //False</code><br>
+    <code>console.log(a <= c) //True</code>
+
+    <div class="exercicios">
+        <h1>Exercicio 1 (Resolvido)</h1>
+        <p>Qual e' o valor da seguinte expressao?</p>
+        <code>let a = 2;</code><br>
+        <code>let b = 1;</code><br>
+        <code>console.log((a * b) >= (a ** b));</code>
+    </div>
+
+    <h3>Igual a (== e ===)</h3>
+    <p>
+        Dados os numeros 'a' e 'b', a operacao 'a == b' ou 'a === b' ira retornar verdade se e somente se 'a' for igual a 'b';
+    </p>
+
+    <h4>Diferenca entre '=', '==' e '==='</h4>
+    <p>Usamos '=' quando queremos taribuir um valor a uma variavel;</p>
+    <p>Exemplo:</p>
+    <code>let x = 5;</code><br>
+    <code>console.log(x = 10); //10</code>
+
+    <p>Usamos '===' para comparar dois valores do mesmo tipo.</p>
+    <p>Exemplo:</p>
+    <code>let x = 10;</code><br>
+    <code>console.log(x === 10); //true</code><br>
+    <code>Neste caso, a variavel x e o numero 10 sao do mesmo tipo (number)</code>
+
+    <p>Usamos '==' para comparar dois valores independentemente do tipo</p>
+    <p>Exemplo:</p>
+    <code>let x = 10;</code><br>
+    <code>console.log(x == "10"); //true</code><br>
+    <code>console.log(x === "10"); //false</code><br>
+    <code>console.log(x == "20"); //false</code><br>
+    <code>Neste caso, a variavel x e o numero 10 sao do mesmo tipo (number)</code>
+
+    <p><b>Obs: </b>E' sempre aconselhado usar === para evitar erros de comparacao.</p>
+
+    <div class="exercicios" >
+        <h1>Exercicio 2 Resolvido</h1>
+        <p>Qual e' a saida do seguinte programa?</p>
+        <code>let a = 10;</code><br>
+        <code>let b = "2.5";</code><br>
+        <code>let c = (5 * a) / 4;</code><br>
+        <code>console.log((a + b) == c);</code>
+        <p>console.log((102.5)==25); Falso</p>
+    </div>
+
+    <h3>And (&&)</h3>
+    <p>
+        Dados os vaores 'a' e 'b', a operacao 'a && b' retorna verdade se e somente se os dois valores forem verdadeiros.
+        Se um deles for falso a operacao ira retornar falso.
+    </p>
+    <p>Exemplo:</p>
+    <code>let a = true;</code><br>
+    <code>let b = true</code><br>
+    <code>let c = false</code><br>
+    <code>console.log(a && b) //true</code><br>
+    <code>console.log(a && c) //false</code><br>
+
+    <h3>OR (||)</h3>
+    <p>
+        Dados os vaores 'a' e 'b', a operacao 'a || b' retorna verdade se pelo menos um dos dois valores for verdadeiro.
+        Caso contrario a operacao ira retornar falso.
+    </p>
+    <p>Exemplo:</p>
+    <code>let a = true;</code><br>
+    <code>let b = true</code><br>
+    <code>let c = false</code><br>
+    <code>console.log(a || b) //true</code><br>
+    <code>console.log(a || c) //true</code><br>
+    <code>console.log(c || false) //false</code><br>
+
+    <h3>NOT (!)</h3>
+    <p>
+        Dado um valor a, a operacao '!a' retorna o oposto do valor inicial de a.
+    </p>
+    <p>Exemplo:</p>
+    <code>let a = true;</code><br>
+    <code>console.log(!a) //false</code>
+
+    <h2>Estruturas de decisao</h2>
+    <p>
+        As estruturas de decisao nos permitem executar uma determinada porcao de codigo 
+        dependendo de uma dada condicao
+    </p>
+
+    <h3>if</h3>
+    <p>O <code>if</code> nos permite executar um codigo se e somente se uma data condicao for satisfeita</p>
+    <p>Exemplo:</p>
+    <code>let idade = 21;</code><br>
+    <code>
+        if(idade >= 18) { <br>
+          console.log("Ja pode tirar carta de conducao"); <br>
+        }
+    </code>
+
+    <h3>if-else</h3>
+    <p>
+        O <code>if</code> nos permite executar um codigo se e somente se uma data condicao 
+        for satisfeita, caso contrario, outra porcao de codigo sera executada.
+    </p>
+    <p>Exemplo:</p>
+    <code>let idade = 14;</code><br>
+    <code>
+        if(idade >= 18) { <br>
+          console.log("Ja pode tirar carta de conducao"); <br>
+        } else { <br>
+            console.log(`Ainda nao tem idade suficiente para tirar carta de conducao. Aguarde mais ${18 - idade}`); <br>
+        }
+    </code>
+
+    <div class="exercicios">
+        <h1>Exercicio 3</h1>
+        <p>
+            Modifique o exercicio 3 da aula 14, para que o programa informe ao usuario quando o valor do delta for negativo e
+            so calcule os valores de x1 e x2 caso o valor de delta nao for negativo.
+        </p>
+        <code> let a = number(prompt("introduza o valor de a")); </code><br>
+        <code>let b = number(prompt("introduza o valor de b")); </code><br>
+        <code> let c = number(prompt("introduza o valor de c")); </code><br>
+        <code>let delta = b ** 2 -4*a*c; </code><br>
+        <code> if (delta < 0) {</code><br> 
+            <code> console.log("Nao existe raiz quadrada de numero negativo");</code><br> 
+        <code> }else if(delta == 0){</code><br> 
+        <code>let  (x1==x2) ;</code><br> 
+        <code>let x1 = -b  / 2 * a;</code><br> 
+        <code>console.log("Delta=0 entao temos raizes iguais");</code><br> 
+        <code>console.log( x1, x2);</code><br> 
+        <code>}else{</code><br> 
+        <code>console.log(delta);</code><br> 
+        <code>let x1 = [-b + Math.sqrt(delta)] / 2 * a;</code><br> 
+         <code>let x2 = [-b - Math.sqrt(delta)] / 2 * a;</code><br> <code></code> console.log(x1, x2);</code> }
+            
+           
+    </div>
+
+    <div class="exercicios">
+        <h1>Exercicio 4</h1>
+        <p>
+            Crie um programa que permite que o utilizador introduza uma hora (numero inteiro), e retorne:
+        </p>
+        <ul>
+            <li>"Bom dia" - se a hora for menor que 12</li>
+            <li>"Boa tarde" - se a hora estiver no intervalo das 12 as 18 (nao inclusivo)</li>
+            <li>"Boa noite" - nas outras horas</li>
+        </ul>
+
+       <code>let h = Number(prompt("introduza a hora"));</code> 
+if(h<12){</code> 
+    alert("bom dia");</code> 
+} else if(h>18){</code> 
+    alert("boa noite");</code> 
+}else{
+    alert("boa tarde");
+}
+
+    </div>
+
+    <h3>switch</h3>
+    <p>
+        O switch e' normalmente usado para escolher uma opcao no meio de varias opcoes disponiveis.
+    </p>
+    <p>
+        Uma aplicacao para o switch sao os menus.
+    </p>
+    <p><b>Estrutura switch</b></p>
+    <br>
+    <code>
+        switch(variavel) { <br>
+            case 'opcao1': <br>
+                //codigo que sera executado se a opcao escolhida por a 'opcao1'; <br>
+                break; <br>
+            case 'opcao2': <br>
+                //codigo que sera executado se a opcao escolhida por a 'opcao2'; <br>
+                break; <br>
+            .... <br>
+            default: <br>
+                //codigo que sera executada se a opcao escolhida nao for nenhuma das listadas acima <br>
+                break; <br>
+        }
+    </code>
+    <p><b>ATT: </b> Veja o codigo de exemplo no ficheiro aula-15.js</p>
+    <p><b>Obs:</b></p>
+    <p>
+        Usamos o break porque quando a opcao e' encontrada as opcoes seguintes nao devem ser testadas.
+    </p>
+
+    <script src="./aula-15.js"></script>
+</body>
+</html>

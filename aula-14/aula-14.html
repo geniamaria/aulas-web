@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./aula-14.css">
+</head>
+
+<body>
+    <!--
+        1. Opercoes aritmeticas
+            - Adicao (+)
+            - Subtracao (-)
+            - incremento ++
+            - decremento --
+            - Multiplicacao (*)
+            - Divisap (/)
+            - Resto da divisao (%)
+            - auto adicao (+=)
+            - auto subtracao (-=)
+            - auto divisao (/=)
+            - auto Multiplicacao (*=)
+            - potencia (**)
+            - raiz quadrada (Math.sqrt())
+            - Introducao a bibliotecas
+    -->
+
+    <h1>JavaScript (parte 2)</h1>
+
+    <h2>Operacoes Aritimeticas</h2>
+    <h3>Adicao (+)</h3>
+    <p>Exemplo:</p>
+    <code>let a = 10;</code><br>
+    <code>let b = 5;</code><br>
+    <code>let soma = a + b;</code><br>
+    <code>console.log(soma);</code><br>
+    <code>Saida: 15</code>
+
+    <h3>Subtracao (-)</h3>
+    <p>Exemplo:</p>
+    <code>let a = 10;</code><br>
+    <code>let b = 5;</code><br>
+    <code>let diferenca = a - b;</code><br>
+    <code>console.lo(diferenca);</code><br>
+    <code>Saida: 5</code>
+
+    <h3>Incremento (++)</h3>
+    <p>Exemplo:</p>
+    <code>let a = 3;</code><br>
+    <code>a++;</code><br>
+    <code>console.log(a)</code><br>
+    <code>Saida: 4</code>
+
+    <h3>Decremento (--)</h3>
+    <p>Exemplo:</p>
+    <code>let a = 3;</code><br>
+    <code>a--;</code><br>
+    <code>console.log(a)</code><br>
+    <code>Saida: 2</code>
+
+    <h3>Multiplicacao (*)</h3>
+    <p>Exemplo:</p>
+    <code>let a = 10;</code><br>
+    <code>let b = 5;</code><br>
+    <code>let produto = a * b;</code><br>
+    <code>console.log(produto);</code><br>
+    <code>Saida: 5</code>
+
+    <h3>Divisao (/)</h3>
+    <p>Exemplo:</p>
+    <code>let a = 10;</code><br>
+    <code>let b = 5;</code><br>
+    <code>let quociente = a / b;</code><br>
+    <code>console.log(quociente);</code><br>
+    <code>Saida: 2</code>
+
+    <div class="exercicios">
+        <h2>Exercicio 1 (resolvido)</h2>
+        <p>
+            Escreva um programa que receba pelo teclado os valores de 'a' e 'b' e calcule o valor de 'x' em uma equacao
+            linear.<br>
+            obs:
+        </p>
+        <ol>
+            <li>Uma equacao linear tem a seguinte forma <code>ax + b = 0</code>;</li>
+            <li>A formula para o calculo de uma equacao linear e': <code>x = -b/a</code></li>
+        </ol>
+        <p>
+            A resolucao do exercicio encontra-se no ficheiro aula-14.js, na pasta aula-14.
+        </p>
+    </div>
+
+    <div class="exercicios">
+        <h2>Exercicio 2</h2>
+        <p>
+            Escreva um programa que calcule as raizes de uma equacao quadratica. <br>
+            obs: o programa deve receber os valores de 'a', de 'b' e de 'c' pelo teclado.<br>
+            <code> let a = number(prompt("introduza o valor de a")); </code><br>
+            <code>let b = number(prompt("introduza o valor de b")); </code><br>
+            <code> let c = number(prompt("introduza o valor de c")); </code><br>
+            <code>let delta = b ** 2 -4*a*c; </code><br>
+            <code>let x1=[-b+matchMedia.sqrt(delta)]/2*a; </code><br>
+            <code>let x2=[-b-matchMedia.sqrt(delta)]/2*a; </code><br>
+            <code>alert(x1); </code><br>
+            <code> alert(x2); </code><br>
+
+    </div>
+
+    <h3>Resto da divisao (%)</h3>
+    <p>Exemplo:</p>
+    <code>let a = 12;</code><br>
+    <code>let b = 5;</code><br>
+    <code>let resto = a % b;</code><br>
+    <code>console.log(resto);</code><br>
+    <code>Saida: 2</code>
+
+    <h3>Auto adicao (+=)</h3>
+    <p>Exemplo:</p>
+    <code>let a = 5;</code><br>
+    <code>a += 4</code><br>
+    <code>console.log(a)</code><br>
+    <code>Saida: 9</code>
+
+    <h3>Potencia (**)</h3>
+    <p>Exemplo:</p>
+    <code>let base = 3;</code><br>
+    <code>let expoente = 2;</code><br>
+    <code>let potencia = base ** expoente</code><br>
+    <code>console.log(potencia)</code><br>
+    <code>Saida: 9</code>
+
+    <h3>Raiz quadrada (Math.sqrt)</h3>
+    <p>Exemplo:</p>
+    <code>let radicando = 9;</code><br>
+    <code>let raizQuadrada = Math.sqrt(radicando);</code><br>
+    <code>console.log(raizQuadrada)</code><br>
+    <code>Saida: 3</code>
+
+    <h3>Bibliotecas</h3>
+    <p>
+        <b>Bibliotecas</b> e' um programa feito por um outro programador que nos podemos usar no nosso programa para
+        fazer algumas tarefas.
+    </p>
+    <p>
+        <b>Math</b> e' uma biblioteca que nos permite efectuar varios calculos matematicos
+    </p>
+
+    <div class="exercicios">
+        <h2>Exercicio 3</h2>
+        <p>
+            Liste 10 metodos que podemos encontrar dentro da biblioteca <code>Math</code> e use 3 desses metodos em
+            3 pequenos programas.
+        </p>
+        <ol>
+            <li><b>Math.E()</b> e' a constante de Euler e base dos logaritimos naturais, aproximadamente 2.718.</li>
+            <li><b>Math.LN2()</b> Logaritimo natural de 2, aproximadamente 0.693.</li>
+            <li><b>Math.LN10()</b> Logaritimo natural de 10, aproximadamente 0.434.</li>
+            <li><b>Math.abs()</b> retoma o modulo ou o valor absoluto, de um nimero|x|</li>
+            <li><b>Math.acos()</b> retoma o arco-coseno de um numero</li>
+            <li><b>Math.acosh()</b> retoma o arco-coseno hiperbolico de um numero de um numero</li>
+            <li><b>Math.asin()</b> retoma o arco-seno de um numero</li>
+            <li><b>Math.asinh()</b> retoma o arco-seno hiperbolico de um numero de um numero</li>
+            <li><b>Math.cbrt()</b> retoma a raiz cubica</li>
+            <li><b> Math.ceil()</b> retoma o menor inteiro que e maior ou igual a um numero.</li>////
+            <li><b>Math.fround()</b> retoma a mais proxima represetacao do ponto flutuante de precisao-unica de um
+                numero</li>
+            <li><b>Math.hypot()</b> retoma a raiz quadrada da soma dos quadrados dos argumento</li>
+        </ol>
+        <h3>Raiz cubica (Math.cbrt())</h3>
+        <p>Exemplo:</p>
+        <code>let cubo = 9;</code><br>
+        <code>let raizCúbica = Math.cbrt(cubo);</code><br>
+        <code>console.log(raizCúbica)</code><br>
+        <code>Saida: 3</code>
+
+        <h3>raiz quadrada da soma (Math.hypot())</h3>
+        <p>Exemplo:</p>
+        <code>let hypot = 9;</code><br>
+        <code>let raiz = Math.hypot(9);</code><br>
+        <code>console.log(raiz)</code><br>
+        <code>Saida: 3</code>
+
+        <h3>seno (Math.asin())</h3>
+        <p>Exemplo:</p>
+        <code>let asin = 30;</code><br>
+        <code>let seno = Math.sin(30);</code><br>
+        <code>console.log(seno)</code><br>
+        <code>Saida: </code>
+
+    </div>
+
+    <script src="./aula-14.js"></script>
+</body>
+
+</html>
