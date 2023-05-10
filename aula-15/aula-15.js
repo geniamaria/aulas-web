@@ -17,6 +17,8 @@ console.log("Ja pode tirar carta de conducao");
 console.log(`Ainda nao tem idade suficiente para tirar carta de conducao. Aguarde mais ${18 - idade} anos.`);
 }
 
+
+//EXEMPLO M-PESA
 //obter o opcao a partir da caixa de dialogo
 let saldo = 109.30;
 let opcao = prompt(`
@@ -51,37 +53,45 @@ switch (opcaoEscolhida) {
 }
 
 
+EXERCICIO 3
+
+let x1, x2;
+
 let a = Number(prompt("introduza o valor de a"));
 let b = Number(prompt("introduza o valor de b"));
 let c = Number(prompt("introduza o valor de c"));
+
 let delta = b ** 2 - 4 * a * c;
+
 if (delta < 0) {
     console.log("Nao existe raiz quadrada de numero negativo");
    
-
 }else if(delta == 0){
-    let  (x1==x2) ;
-    let x1 = -b  / 2 * a;
+    x1 = [-b + Math.sqrt(delta)] / 2 * a;
+    x2 = [-b - Math.sqrt(delta)] / 2 * a;
     console.log("Delta=0 entao temos raizes iguais");
     console.log( x1, x2);
 }else{
     console.log(delta);
-    let x1 = [-b + Math.sqrt(delta)] / 2 * a;
-    let x2 = [-b - Math.sqrt(delta)] / 2 * a;
+    x1 = [-b + Math.sqrt(delta)] / 2 * a;
+    x2 = [-b - Math.sqrt(delta)] / 2 * a;
     console.log(x1, x2);
     
 }
-*/
-let h = Number(("introduza a hora"));
+
+EXERCICIO 4
+
+let h = Number(prompt("introduza a hora"));
 
 if(h<12){
-    alert("bom dia");
+    console.log("bom dia");
 } else if(h>18){
-    alert("boa noite");
+    console.log("boa noite");
 }else{
-    alert("boa tarde");
+    console.log("boa tarde");
 }
 
+*/
 
 
 

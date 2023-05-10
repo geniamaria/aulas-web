@@ -1,11 +1,175 @@
-1. Estruturas de repeticao
-    - for
-    - while
-    - do-while
-2. strict mode
-4. funcoes
-    - Funcoes declaradas
-    - Funcoes anonimas
-    - arrow function
-5. arrays
-    estrutura de repeticao "foreachh"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 16</title>
+    <link rel="stylesheet" href="./aula-16.css">
+</head>
+
+<body>
+    <!--
+        1. Estruturas de repeticao
+            - for
+            - while
+            - do-while
+        2. funcoes
+            - Funcoes declaradas 
+            - Funcoes anonimas *
+            - arrow function *
+        3. arrays *
+            estrutura de repeticao "foreach"
+        4. strict mode *
+    -->
+
+    <h1>JavaScript (Parte 4)</h1>
+
+    <h2>Estruturas de repeticao</h2>
+    <p>
+        Usamos as estruturas de repeticao quando queremos que uma 
+        terefa seja repetida um certo numero de vezes;
+    </p>
+
+    <h3>Estrurtura <code>for</code></h3>
+    <p>
+        <b>Sintaxe:</b><br>
+        <code>
+            for(inicializacao; condicao; incremento/decremento) { <br>
+                TODO: O codigo que sera executado multiplas vezes <br>
+            }
+        </code>
+    </p>
+
+    <p><b>Exemplo:</b> Um codigo que ira imprimir a frase "Bom dia" 10 vezes</p>
+    <code>
+        for(let i = 0; i < 10; i++) { <br>
+            console.log("Bom dia"); <br>
+        }
+    </code>
+
+    <div class="exercicios" >
+        <h1>Exercicio 1</h1>
+        <p>
+            Escreva um programa que calcule e imprima a media das idades de indivíduos introduzidas
+            pelo utilizador. <br>
+            Dica: Use a estrutura de repeticao <code>for</code>
+        </p>
+    </div>
+
+
+    <h3>Estrurtura <code>while</code></h3>
+
+    <p>
+        <b>Sintaxe:</b><br>
+        <code>
+            inicializacao;
+            while (condicao) { <br>
+                TODO: o codigo que sera executado multiplas vezes. <br><br>
+
+                incremento/decremento;<br>
+            }
+        </code>
+    </p>
+
+    <p><b>Exemplo:</b> Um codigo que ira imprimir a frase "Bom dia" 10 vezes</p>
+    <code>
+        let i = 0;
+        while(i < 10) { <br>
+            console.log("Bom dia"); <br>
+            i++; <br>
+        }
+    </code>
+
+    <div class="exercicios" >
+        <h1>Exercicio 2</h1>
+        <p>
+            Escreva um programa que imprima numero impares no ingtervalo de 30 a 90. <br>
+            Dica: Use a estrutura de repeticao <code>while</code>
+        </p>
+    </div>
+
+    <h3>Estrurtura <code>do-while</code></h3>
+
+    <p>
+        <b>Sintaxe:</b><br>
+        <code>
+            inicializacao;
+            do { <br>
+                TODO: o codigo que sera executado multiplas vezes. <br><br>
+
+                incremento/decremento;<br>
+            } while (condicao);
+        </code>
+    </p>
+
+    <p><b>Exemplo:</b> Um codigo que ira imprimir a frase "Bom dia" 10 vezes</p>
+    <code>
+        let i = 0;
+        do { <br>
+            console.log("Bom dia"); <br>
+            i++; <br>
+        } while(i < 10);
+    </code>
+
+    <div class="exercicios" >
+        <h1>Exercicio 3</h1>
+        <p>
+            Escreva um programa que imprima numeros pares no intervalo de 30 a 90. <br>
+            Dica: Use a estrutura de repeticao <code>do-while</code>
+        </p>
+    </div>
+
+    <h3>Diferenca entre o <code>while</code> e <code>do-while</code></h3>
+
+    <p>
+        A diferenca entre o <code>while</code> e <code>do-while</code> e' que o <code>while</code> so' executa se 
+        a inicializacao estiver dentro do intervalo da condicao, enquando que <code>do-while</code> sempre 
+        executa pelo menos uma vez (mesmo se a inicializacao nao estiver dentro do intervalo da condicao).
+    </p>
+
+    <h2>Funcoes</h2>
+    <p>
+        Funcoes saos blocos de codigo que se dedicam a execucao de uma certa tarefa.
+    </p>
+
+    <h3>Funcoes declaradas</h3>
+
+    <p>
+        <b>Sintaxe:</b><br>
+        <code>
+            function nomeFuncao(parametros : opcional) {
+                TODO: o codigo que a funcao executa
+
+                return valorRetornado (opcional)
+            }
+        </code>
+    </p>
+
+    <p><b>Exemplo:</b> Uma funcao que recebe dois numeros, calcula a soma dos dois numeros e retorna o resultado da soma.</p>
+    <code>
+        function somarNumeros(nr1, nr2) { <br>
+            let soma = nr1 + nr2; <br><br>
+
+            return soma; <br>
+        }
+    </code>
+
+    <p>Para executar a funcao do exemplo acima, devemos chamar a funcao e passar para ela os dois numeros que desejamos somar. Isto e,</p>
+    <code>
+        let resultadoSoma = somarNumeros(10, 15); <br>
+        console.log(resultadoSoma); <br>
+    </code>
+
+    <div class="exercicios" >
+        <h1>Exercicio 4</h1>
+        <p>
+            Implementar metodos para execucao das opcoes no exercicio da vodacom.
+        </p>
+    </div>
+
+    <script src="./aula-16.js"></script>
+</body>
+
+</html>
