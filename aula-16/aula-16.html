@@ -28,7 +28,7 @@
 
     <h2>Estruturas de repeticao</h2>
     <p>
-        Usamos as estruturas de repeticao quando queremos que uma 
+        Usamos as estruturas de repeticao quando queremos que uma
         terefa seja repetida um certo numero de vezes;
     </p>
 
@@ -49,13 +49,25 @@
         }
     </code>
 
-    <div class="exercicios" >
+    <div class="exercicios">
         <h1>Exercicio 1</h1>
         <p>
             Escreva um programa que calcule e imprima a media das idades de indivíduos introduzidas
             pelo utilizador. <br>
             Dica: Use a estrutura de repeticao <code>for</code>
         </p>
+        <p>
+            <code> let quant = Number( prompt("digite a quantidade das das idades desejadas "));
+                let idade,soma=0,media=0;
+                for(let i = 0; i < quant; i++) {<br>
+                   idade= Number(prompt(i));<br>
+                   soma += idade;<br>
+                    
+                }
+                media=soma/quant<br>
+                console.log(soma);<br>
+                console.log(media);<br>
+            </code>                </p>
     </div>
 
 
@@ -82,7 +94,7 @@
         }
     </code>
 
-    <div class="exercicios" >
+    <div class="exercicios">
         <h1>Exercicio 2</h1>
         <p>
             Escreva um programa que imprima numero impares no ingtervalo de 30 a 90. <br>
@@ -113,7 +125,7 @@
         } while(i < 10);
     </code>
 
-    <div class="exercicios" >
+    <div class="exercicios">
         <h1>Exercicio 3</h1>
         <p>
             Escreva um programa que imprima numeros pares no intervalo de 30 a 90. <br>
@@ -124,8 +136,8 @@
     <h3>Diferenca entre o <code>while</code> e <code>do-while</code></h3>
 
     <p>
-        A diferenca entre o <code>while</code> e <code>do-while</code> e' que o <code>while</code> so' executa se 
-        a inicializacao estiver dentro do intervalo da condicao, enquando que <code>do-while</code> sempre 
+        A diferenca entre o <code>while</code> e <code>do-while</code> e' que o <code>while</code> so' executa se
+        a inicializacao estiver dentro do intervalo da condicao, enquando que <code>do-while</code> sempre
         executa pelo menos uma vez (mesmo se a inicializacao nao estiver dentro do intervalo da condicao).
     </p>
 
@@ -147,7 +159,8 @@
         </code>
     </p>
 
-    <p><b>Exemplo:</b> Uma funcao que recebe dois numeros, calcula a soma dos dois numeros e retorna o resultado da soma.</p>
+    <p><b>Exemplo:</b> Uma funcao que recebe dois numeros, calcula a soma dos dois numeros e retorna o resultado da
+        soma.</p>
     <code>
         function somarNumeros(nr1, nr2) { <br>
             let soma = nr1 + nr2; <br><br>
@@ -156,13 +169,14 @@
         }
     </code>
 
-    <p>Para executar a funcao do exemplo acima, devemos chamar a funcao e passar para ela os dois numeros que desejamos somar. Isto e,</p>
+    <p>Para executar a funcao do exemplo acima, devemos chamar a funcao e passar para ela os dois numeros que desejamos
+        somar. Isto e,</p>
     <code>
         let resultadoSoma = somarNumeros(10, 15); <br>
         console.log(resultadoSoma); <br>
     </code>
 
-    <div class="exercicios" >
+    <div class="exercicios">
         <h1>Exercicio 4</h1>
         <p>
             Implementar metodos para execucao das opcoes no exercicio da vodacom.
