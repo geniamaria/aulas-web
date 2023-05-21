@@ -28,15 +28,39 @@ do {
     i++;
 } while (i < 10);
 
-//exemplo de um metodo que soma dois numeros
+//exemplo de um metodo que soma dois numeros (usando funcao declarada)
 function somarNumeros(nr1, nr2) {
     let soma = nr1 + nr2;
 
     return soma;
 }
 
-let resultadoSoma = somarNumeros(10, 15);
-console.log(resultadoSoma);
+console.log(somarNumeros(10, 15));
+
+
+//exemplo de um metodo que soma dois numeros (usando funcao anonima)
+let somarNumeros = function (nr1, nr2) {
+    let soma = nr1 + nr2;
+
+    return soma;
+}
+
+console.log(somarNumeros(10, 15));
+
+
+//exemplo de um metodo que soma dois numeros (usando funcao arrow functions)
+let somarNumeros = (nr1, nr2) => {
+    let soma = nr1 + nr2;
+
+    return soma;
+}
+
+console.log(somarNumeros(10, 15));
+
+//exemplo de um metodo que soma dois numeros (usando funcao arrow function simplificado)
+let somarNumeros = (nr1, nr2) => nr1 + nr2;
+
+console.log(somarNumeros(10, 15));
 
 
 
@@ -169,6 +193,8 @@ while(nr1>30 && nr1<90){
 
 }*/
 //Em-pesa
+
+/*
 let opcaoEscolhida;
 let saldo = 109.30;
 while (true) {
@@ -342,5 +368,5 @@ function comprarMegas(opcaoMegas) {
     function comprarTxuna(opcaoTxuna){
         alert("parabens recebeste txuna credito")
     }
-
+*/
 

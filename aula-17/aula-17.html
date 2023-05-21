@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 17</title>
+    <link rel="stylesheet" href="aula-17.css">
+</head>
+<body>
+    <!--
+        1. arrays
+            estrutura de repeticao "foreach"
+        2. strict mode
+        3. Objectos
+    -->
+
+    <h1>JavaScript (Parte 5)</h1>
+
+    <h2>Arrays</h2>
+    <p>
+        Array e' uma estrutura de dados onde podemos armazenar vários dados e
+        posteriormente aceder esses dados. 
+    </p>
+
+    <h3>Criacao de um array</h3>
+    <p>Existem duas dormas de criar um array.</p>
+    <p><b>Metodo 1:</b></p>
+    <p>
+        <b>Sintaxe:</b>
+        <code>
+            let nomeVariavel = new Array(valor 1, valor 2, valor 3, ...);
+        </code>
+    </p>
+
+    <p><b>Metodo 1:</b></p>
+    <p>
+        <b>Sintaxe:</b>
+        <code>
+            let nomeVariavel = [valor 1, valor 2, valor 3, ...];
+        </code>
+    </p>
+
+    <h3>Posicoes dos elementos de uma array</h3>
+    <p>
+        Os elementos de um array sao identificados por indices, comecando de zero (0). ou seja,
+        o primeiro elemento tem indice 0, o segundo elemento tem indice 1 e por diante.
+    </p>
+
+    <p><b>Exemplo:</b></p>
+    <code>
+        let lista = ["um", "dois", "tres"]; <br>
+        let primeiroElemento = lista[0]; <br>
+        let segundoElemento = lista[1]; <br>
+        let terceroElemento = lista[2]; <br>
+
+        console.log(`Primeiro elemento: ${primeiroElemento}, Segundo elemento: ${segundoElemento}`); <br><br>
+
+        Saida: Primeiro elemento: um, Segundo elemento: dois
+    </code>
+
+    <h3>Metodos para a manipulacao de arrays</h3>
+
+    <h4>length</h4>
+    <p>
+        O metodo <code>length</code> retorna o tamanho de um array.
+    </p>
+    <p>
+        <b>Exemplo:</b>
+    </p>
+    <code>
+        let lista = [1, 2, 3, 4];
+        console.log(lista.length); 
+
+        Saida: 4;
+    </code>
+
+
+    <h4>push</h4>
+    <p>
+        O metodo <code>push</code> adiciona um  elemento no final de um array.
+    </p>
+    <p>
+        <b>Exemplo:</b>
+    </p>
+    <code>
+        let lista = [1, 2, 3, 4];
+        lista.push("cinco");
+
+        console.log(lista);
+
+        Saida: [1, 2, 3, 4, "cinco"];
+    </code>
+
+
+    <h4>unshift</h4>
+    <p>
+        O metodo <code>unshift</code> adiciona um elemento no inicio de um array.
+    </p>
+    <p>
+        <b>Exemplo:</b>
+    </p>
+    <code>
+        let lista = [1, 2, 3, 4];
+        lista.unshift("zero");
+
+        console.log(lista);
+
+        Saida: ["zero", 1, 2, 3, 4];
+    </code>
+
+    <div class="exercicios">
+        <h1>Exercicio 1</h1>
+        <p>
+            Pesquisar os outros métodos de arrays e dar exemplos de seu uso
+        </p>
+    </div>
+
+    <script src="./aula-17.js"></script>
+</body>
+</html>

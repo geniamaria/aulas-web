@@ -17,11 +17,8 @@
             - do-while
         2. funcoes
             - Funcoes declaradas 
-            - Funcoes anonimas *
-            - arrow function *
-        3. arrays *
-            estrutura de repeticao "foreach"
-        4. strict mode *
+            - Funcoes anonimas 
+            - arrow function 
     -->
 
     <h1>JavaScript (Parte 4)</h1>
@@ -143,7 +140,7 @@
 
     <h2>Funcoes</h2>
     <p>
-        Funcoes saos blocos de codigo que se dedicam a execucao de uma certa tarefa.
+        Funcoes sao blocos de codigo que se dedicam a execucao de uma certa tarefa.
     </p>
 
     <h3>Funcoes declaradas</h3>
@@ -151,10 +148,10 @@
     <p>
         <b>Sintaxe:</b><br>
         <code>
-            function nomeFuncao(parametros : opcional) {
-                TODO: o codigo que a funcao executa
+            function nomeFuncao(parametros : opcional) { <br>
+                TODO: o codigo que a funcao executa <br><br>
 
-                return valorRetornado (opcional)
+                return valorRetornado (opcional) <br>
             }
         </code>
     </p>
@@ -181,6 +178,138 @@
         <p>
             Implementar metodos para execucao das opcoes no exercicio da vodacom.
         </p>
+    </div>
+
+    <h3>Funcoes Anonimas</h3>
+    <p>
+        Estas funcoes nao possuem um nome. <br>
+        Normalmente essas funcoes sao atribuidas a uma variavel para poder usa-las e 
+        devem e devem ter sempre um retorno.
+    </p>
+
+    <p>
+        <b>Sintaxe:</b><br>
+        <code>
+            function(parametros : opcional) { <br>
+                TODO: o codigo que a funcao  <br><br>
+
+                return valorRetornado (obrigatorio) <br>
+            }
+        </code>
+    </p>
+
+    <p><b>Exemplo:</b> Uma funcao que recebe dois numeros, calcula a soma dos dois numeros e retorna o resultado da
+        soma.</p>
+    <code>
+        let somarNumeros = function (nr1, nr2) { <br>
+            let soma = nr1 + nr2; <br><br>
+
+            return soma; <br>
+        }
+    </code>
+
+    <p>
+        Para executar a funcao anonima do exemplo acima, devemos devemos atribuir a funcao a uma certa variavel e usar a variavel para
+        passar os argumentos. Isto e,
+    </p>
+    <code>
+        console.log(somarNumeros(10, 15)); <br>
+    </code>
+
+    <h3>Arrow Functions</h3>
+    <p>
+        Estas funcoes nao possuem um nome e nem a palavra "function" <br>
+        Normalmente essas funcoes sao atribuidas a uma variavel para poder usa-las e devem 
+        ter sempre um retorno.
+    </p>
+
+    <p>
+        <b>Sintaxe:</b><br>
+        <code>
+            (parametros : opcional) => { <br>
+                TODO: o codigo que a funcao  <br><br>
+
+                return valorRetornado (obrigatorio) <br>
+            }
+        </code>
+    </p>
+
+    <p>
+        Se a funcao tiver somente a linha de retorno, entao a sintaxe fica simplificada da seguinte forma
+    </p>
+    <p>
+        <b>Sintaxe:</b><br>
+        <code>
+            (parametros : opcional) => valorRetornado (origatorio)
+        </code>
+    </p>
+
+    <p><b>Exemplo:</b> Uma funcao que recebe dois numeros, calcula a soma dos dois numeros e retorna o resultado da
+        soma.</p>
+    <code>
+        let somarNumeros = (nr1, nr2) => { <br>
+            let soma = nr1 + nr2; <br><br>
+
+            return soma; <br>
+        }
+    </code>
+
+    <p>
+        Para executar a funcao anonima do exemplo acima, devemos devemos atribuir a funcao a uma certa variavel e usar a variavel para
+        passar os argumentos. Isto e,
+    </p>
+    <code>
+        console.log(somarNumeros(10, 15)); <br>
+    </code>
+
+    <div class="exercicios">
+        <h1>Exercicio 5: Projecto Calculadora</h1>
+        <p>
+            Neste projecto deve-se contruir uma calculadora baseada em web.
+        </p>
+        <h2>Parte 1.</h2>
+        <p>
+            Faca um programa em JS que efectue operacoes matematicas basicas (Adicao, subtracao e divisao). <br>
+            A funcao deve ter:
+        </p>
+        <ul>
+            <li>Um menu onde o utilizador pode escolher a operacao que deseja efectuar</li>
+            <li>No menu, deve existir uma opcao para sair do programa.</li>
+        </ul>
+        <p>
+            Use:
+        </p>
+        <ul>
+            <li>Uma estrutura de decicao e/ou de repeticao adequada para o menu.</li>
+            <li>Funcoes separadas para cada operacao.</li>
+            <li>Os 3 tipos de funcao estudadas nestas aulas.</li>
+        </ul>
+        <p><b>OBS:</b></p>
+        <ul>
+            <li>Use <code>prompt</code> para mostrar o menu e receber os dados.</li>
+            <li>Use <code>alert</code> para mostrar os resuldados das operacoes</li>
+        </ul>
+
+        <h2>Parte 2.</h2>
+        <p>
+            Desenhe o layout de uma calculadora no index do projecto.
+        </p>
+        <p><b>NOTAS:</b></p>
+        <ol>
+            <li>
+                Cria um novo projecto (separado desta aula) para o programa e use
+                a estrutura de projectos que vimos no inicio das aulas.
+            </li>
+            <li>
+                Crie um repositorio git para o projecto
+            </li>
+            <li>
+                Crie um repositorio remoto (no GitHub) e faca o upload do projecto para este repositorio.
+            </li>
+            <li>
+                Adicione o usuario "Jay-Ubisse" como colabrador do projecto no github.
+            </li>
+        </ol>
     </div>
 
     <script src="./aula-16.js"></script>
