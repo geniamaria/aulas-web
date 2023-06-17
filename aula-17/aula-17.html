@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Aula 17</title>
     <link rel="stylesheet" href="aula-17.css">
 </head>
+
 <body>
     <!--
         1. arrays
@@ -20,7 +22,7 @@
     <h2>Arrays</h2>
     <p>
         Array e' uma estrutura de dados onde podemos armazenar vários dados e
-        posteriormente aceder esses dados. 
+        posteriormente aceder esses dados.
     </p>
 
     <h3>Criacao de um array</h3>
@@ -78,7 +80,7 @@
 
     <h4>push</h4>
     <p>
-        O metodo <code>push</code> adiciona um  elemento no final de um array.
+        O metodo <code>push</code> adiciona um elemento no final de um array.
     </p>
     <p>
         <b>Exemplo:</b>
@@ -114,8 +116,41 @@
         <p>
             Pesquisar os outros métodos de arrays e dar exemplos de seu uso
         </p>
+        <p>Array lengh</p>
+        <code>
+            const fruits = ["Banana", "Orange", "Apple", "Mango"];
+            let size = fruits.length
+        </code>
+        <p>Array toString()</p>
+        <h1> Example </h1>
+        <code>
+            const fruits = ["Banana", "Orange", "Apple", "Mango"];
+            document.getElementById("demo").innerHTML = fruits.toString();
+            saida:
+            Banana,Orange,Apple,Mango
+        </code>
+
+        <h1>Array push()</h1>
+        <p>The push() method adds a new element to an array (at the end):</p>
+
+        <h2>Example</h2>
+        <code>
+            const fruits = ["Banana", "Orange", "Apple", "Mango"];
+            fruits.push("Kiwi");
+        </code>
+        <h1>Merging (Concatenating) Arrays</h1>
+        <p>The concat() method creates a new array by merging (concatenating) existing arrays:</p>
+
+        <h2>Example (Merging Two Arrays)</h2>
+        <code>
+            const myGirls = ["Cecilie", "Lone"];
+            const myBoys = ["Emil", "Tobias", "Linus"];
+
+            const myChildren = myGirls.concat(myBoys);
+        </code>
     </div>
 
     <script src="./aula-17.js"></script>
 </body>
+
 </html>

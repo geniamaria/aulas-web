@@ -32,7 +32,8 @@ lista.unshift("zero");
 console.log(lista);
 */
 
-
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let size = fruits.length;
 
 
 
