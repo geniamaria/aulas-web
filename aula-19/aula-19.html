@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 19</title>
+    <link rel="stylesheet" href="./aula-19.css">
+</head>
+<body>
+    <!--
+        1. DOM (Document Object Model)
+            1.1. Adicionar ou alterar texto de um elemento HTML
+                - innerHTML
+            1.2. ACeder elementos HTML (Selectores)
+                - getElementById('id');
+                - getElementByClassName('classe');
+                - getElementByTagName('nomeDaTag');
+            1.3. Criar e eliminar elementos HTML
+                - createElement('elemento');
+                - appendChild('');
+                - removeChild('');
+                - replaceChild('');
+    -->
+
+    <h1 id="titulo">JavaScript (Parte 7)</h1>
+
+    <h2>DOM</h2>
+    <p>
+        O DOM e' um padrão da Web que nos permite criar, aceder, modificar e eliminar elementos HTML em 
+        uma pagina web. Com o DOM tambem e' adicionar, modificar e eliminar estilos (CSS) em uma pagina
+        web.
+    </p>
+    <p>
+        O DOM pode ser acedido atraves do JavaScript.
+    </p>
+
+    <h3>innerHTML</h3>
+    <p>
+        O <code>innerHTML</code> permite-nos visualizar, adicionar ou substituir textos dentro
+        de elementos HTML.
+    </p>
+    
+    <h3>getElementById('id')</h3>
+
+    <p id="paragraph">
+        O Mundo e' redondo.
+    </p>
+
+    <code id="code">
+
+    </code>
+
+    <h3>getElementByClassName</h3>
+
+    <p>
+        Quando usamos o selectir <code>getElementByClassName('classe')</code> o JS pega todos os elementos
+        que contem a classe especificada no selector e armazena em um array.
+    </p>
+
+    <p class="web">
+        HTML e' uma linguagem de Marcacao de Hipertexto.
+    </p>
+
+    <p class="web">
+        HTML nos permite construir uma estrutura semantica do conteudo de uma pagina web,
+    </p>
+
+    <p class="web">
+        Nos podemos manipular o DOM atraves do JavaScript.
+    </p>
+
+
+    <h3>getElementByTagName</h3>
+
+    <p>
+        Quando usamos o selector <code>getElementByTagName('tag')</code> o JS pega todos os elementos
+        que contem a tag especificada no selector e armazena em um array.
+    </p>
+
+    <p>
+        HTML e' uma linguagem de Marcacao de Hipertexto.
+    </p>
+
+    <p>
+        HTML nos permite construir uma estrutura semantica do conteudo de uma pagina web,
+    </p>
+
+    <p>
+        Nos podemos manipular o DOM atraves do JavaScript.
+    </p>
+
+    <h3>CreateElement('elemento')</h3>
+    <p>
+        <code>createElement('elemento')</code> permite-nos criar um elemnto (tag) HTML.
+    </p>
+
+    <h3>appendChild('elemento')</h3>
+    <p>
+        <code>appendChild('elemento')</code> permite-nos inserir um elemnto HTML dentro de outro
+        elemento HTML.
+    </p>
+
+    <div id="container-1">
+
+    </div>
+
+    <h3>removeChild('elemento')</h3>
+    <p>
+        <code>removeChild('elemento')</code> permite-nos remover um elemento HTML dentro de um
+        elemento HTML.
+    </p>
+
+    <div id="container-2">
+        <p id="paragrafo">Eu sou um paragrafo que serei removido pelo JS.</p>
+    </div>
+
+    <h3>replaceChild('elemento')</h3>
+    <p>
+        <code>replaceChild('elemento')</code> permite-nos substituir um elemento HTML por outro elemento HTML 
+         dentro de um elemento HTML.
+    </p>
+
+    <div id="container-3">
+        <h3 id="titulo">Eu sou um titulo que serei substituido por um paragrafo usando o JS.</p>
+    </div>
+
+
+
+
+    
+    
+    <script src="./aula-19.js"></script>
+</body>
+</html>
