@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 18</title>
+    <style>
+        .example {
+            width: fit-content;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: lightgray;
+        }
+
+        .notes {
+            width: fit-content;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        1.Métodos de Stings
+            - length
+            - substring(inicio, fim)
+            - substr(inicio, tamanho)
+            - replace(string)
+            - toUpperCase()
+            - toLowerCase()
+            - trim()
+            - trimStart()
+            - trimEnd()
+            - charAt(indice)
+            - split(separador)
+    -->
+
+    <h1>JavaScript (Parte 6)</h1>
+
+    <h2>Métodos de Strings</h2>
+
+    <h3>length</h3>
+    <p>
+        <strong><code>length</code></strong> retorna o numero de caracteres de uma string.
+    </p>
+    <div class="example">
+        <p><strong>Exemplo:</strong></p>
+        <code>
+            let texto = "Hello, world!";<br>
+            console.log(texto.length);<br><br>
+
+            <b>Saida: </b> 13
+        </code>
+    </div>
+
+    <h3>substring(inicio, fim)</h3>
+    <p>
+        <strong><code>substring</code> </strong> extrai uma parte de uma string e retorna a parte extraida da string. <br>
+        O inicio e o fim da parte extraída e' definida pelos parâmetros 'inicio' (inclusivo) e fim (exclusivo)
+    </p>
+    <div class="example">
+        <p><strong>Exemplo:</strong></p>
+        <code>
+            let texto = "Hello, world!";<br>
+            let novoTexto = texto.substring(0, 5);<br>
+            console.log(novoTexto);<br><br>
+
+            <b>Saida: </b> Hello
+        </code>
+    </div>
+
+    <h3>substr(inicio, tamanho)</h3>
+    <p>
+        <strong><code>substr</code> </strong> e' similar ao substring a diferença e' que o segundo parâmetro indica o tamanho da parte extraída no string. <br>
+        O inicio e o fim da parte extraída e' definida pelos parâmetros 'inicio' (inclusivo) e fim (exclusivo)
+    </p>
+    <div class="example">
+        <p><strong>Exemplo:</strong></p>
+        <code>
+            let texto = "Hello, world!";<br>
+            let novoTexto = texto.substr(7, 6);<br>
+            console.log(novoTexto);<br><br>
+
+            <b>Saida: </b> world!
+        </code>
+    </div>
+
+    <h3>replace(parteAntiga, parteNova)</h3>
+    <p>
+        <strong><code>replace</code> </strong> substitui uma parte de uma string (parteAntiga) por uma nova (parte nova).
+    </p>
+    <div class="notes">
+        <p><strong>Notas:</strong></p>
+        <ul>
+            <li><strong>replace</strong> nao substitui a string inicial, mas sim, gera uma nova string.</li>
+            <li><strong>replace</strong> apenas substitui a primeira ocorrência</li>
+            <li><strong>replace</strong> e' sensível a maiúsculas</li>
+        </ul>
+    </div>
+    <div class="example">
+        <p><strong>Exemplo:</strong></p>
+        <code>
+            let texto = "Ola, João. Ola, Paulo.";<br>
+            let novoTexto = texto.replace("Ola", "Oi");<br>
+            console.log(`Nova String: ${novoTexto}`);<br>
+            console.log(`Antiga String: ${texto}`);<br><br>
+
+            <b>Saída: </b><br>
+            Nova String: Oi, João. Ola, Paulo. <br>
+            Antiga String: Ola, João. Ola, Paulo.
+        </code>
+    </div>
+    <p>
+        Para substituir todas as ocorrências, use uma expressão regular com o flag <strong>/g</strong>.
+    </p>
+    <div class="notes">
+        <p><strong>Notas:</strong></p>
+        <ul>
+            <li>Expressões regulares sao escritas sem aspas.</li>
+        </ul>
+    </div>
+    <div class="example">
+        <p><strong>Exemplo:</strong></p>
+        <code>
+            let texto = "Ola, João. Ola, Paulo.";<br>
+            let novoTexto = texto.replace(/Ola/g, "Oi");<br>
+            console.log(`Nova String: ${novoTexto}`);<br>
+            console.log(`Antiga String: ${texto}`);<br><br>
+
+            <b>Saída: </b><br>
+            Nova String: Oi, João. Oi, Paulo. <br>
+            Antiga String: Ola, João. Ola, Paulo.
+        </code>
+    </div>
+
+    <h3>toUpperCase()</h3>
+    <p>
+        <strong><code>toUpperCase()</code> </strong> converte toda String para maiúsculas.
+    </p>
+    <div class="example">
+        <p><strong>Exemplo:</strong></p>
+        <code>
+            let texto = "Ola, Mundo!";<br>
+            console.log(texto.toUpperCase());<br><br>
+
+            <b>Saída: </b> OLA, MUNDO!
+        </code>
+    </div>
+
+    <h3>toLowerCase()</h3>
+    <p>
+        <strong><code>toLowerCase()</code> </strong> converte toda String para minusculas.
+    </p>
+    <div class="example">
+        <p><strong>Exemplo:</strong></p>
+        <code>
+            let texto = "Ola, Mundo!";<br>
+            console.log(texto.toLowerCase());<br><br>
+
+            <b>Saída: </b> ola, mundo!
+        </code>
+    </div>
+
+    <h3>trim()</h3>
+    <p>
+        <strong><code>trim()</code> </strong> Elimina espaços no inicio e no fim de uma String.
+    </p>
+    <div class="example">
+        <p><strong>Exemplo:</strong></p>
+        <code>
+            let texto = " Ola, Mundo! ";<br>
+            console.log(texto.trim());<br><br>
+
+            <b>Saída: </b> Ola, mundo!
+        </code>
+    </div>
+
+    <h3>trimStart()</h3>
+    <p>
+        <strong><code>trimStart()</code> </strong> Elimina espaços e no inicio de uma String.
+    </p>
+    <div class="example">
+        <p><strong>Exemplo:</strong></p>
+        <code>
+            let texto = " Ola, Mundo!";<br>
+            console.log(texto.trimStart());<br><br>
+
+            <b>Saída: </b> Ola, mundo!
+        </code>
+    </div>
+
+    <h3>trimEnd()</h3>
+    <p>
+        <strong><code>trimEnd()</code> </strong> Elimina espaços e no fim de uma String.
+    </p>
+    <div class="example">
+        <p><strong>Exemplo:</strong></p>
+        <code>
+            let texto = " Ola, Mundo!";<br>
+            console.log(texto.trimEnd());<br><br>
+
+            <b>Saída: </b> Ola, mundo!
+        </code>
+    </div>
+
+    <h3>charAt(indice)</h3>
+    <p>
+        <strong><code>charAt()</code> </strong> retorna o caractere localizado no índice especificado.
+    </p>
+    <div class="example">
+        <p><strong>Exemplo:</strong></p>
+        <code>
+            let texto = "Ola, Mundo!";<br>
+            let letra = texto.charAt(5);<br>
+            console.log(letra);<br><br>
+
+            <b>Saída: </b> M
+        </code>
+    </div>
+
+    <h3>split(separador)</h3>
+    <p>
+        <strong><code>split()</code> </strong> converte uma String para um array.<br>
+        O parâmetro (separador) do método e' que divide os elementos do array na String
+    </p>
+    <div class="example">
+        <p><strong>Exemplo:</strong></p>
+        <code>
+            let texto = "HTML, CSS, JavaScript";<br>
+            let array = texto.split(',');<br>
+            console.log(array);<br><br>
+
+            <b>Saída: </b> [HTML, CSS, JavaScript]
+        </code>
+    </div>
+    <div class="example">
+        <p><strong>Exemplo:</strong></p>
+        <code>
+            let texto = "Laranja Banana Papaia";<br>
+            let array = texto.split(' ');<br>
+            console.log(array[1]);<br><br>
+
+            <b>Saída: </b> Banana
+        </code>
+    </div>
+
+</body>
+</html>
