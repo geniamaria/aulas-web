@@ -61,12 +61,17 @@ document.getElementById('container-1').appendChild(p);
 //remover o paragrafo dentro de uma div com o id 'contaier-2'
 let paragrafoEliminado = document.getElementById('paragrafo');
 document.getElementById('container-2').removeChild(paragrafoEliminado);
-*/
-
 //TPC: encontrar o bug
 let p = document.createElement("p").innerHTML = "Eu sou o paragrafo que substituiu o titulo";
 let titulo = document.getElementById('titulo');
 document.getElementById('container-3').replaceChild(titulo, p);
+*/
+let texto = "Ola, João. Ola, Paulo.";
+let novoTexto = texto.replace("Ola", "Oi");
+console.log(`Nova String: ${novoTexto}`);
+console.log(`Antiga String: ${texto}`);
+
+
 
 
 
