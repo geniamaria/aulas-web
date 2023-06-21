@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 18</title>
+    <style>
+        .example {
+            width: fit-content;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: lightgray;
+        }
+
+        .notes {
+            width: fit-content;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: burlywood;
+        }
+        #div-style {
+            display: block;
+            background-color: blue;
+            color: red;
+            width: 300px;
+            height: 200px;
+            padding-left: 20px;
+            padding-top: 40px;
+            margin: 30px;
+        }
+        #mouseover {
+            background-color: black;
+            color: white;
+            width: 200px;
+            height: 200px;
+            margin: 30px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        1. DOM (Continuacao)
+            1.1. Mudar atributos e estilos de elementos HTML
+                - elemento.propriendade = novoValor
+                - elemento.style.propriedade = novoEstilo
+            1.2. Receber valores atraves de inputs (elemento.value)
+            1.3. Eventos
+                - onload => E' um evento que acontece quando a pagina e' mostrada. 
+                    (window.onload = function(){ evento } )
+                - onclick => E' um evento que acontece sempre que clicamos em algum elemento
+                    (elemento.onclick = function(){ evento });
+                - onchange => E' um evento que acontece instantaneamente quando algo muda. Geralmente sao usandos em campos de busca
+                    (elemento.onchange = function(){ evento });
+                - onmouseover
+                - onmouseout
+    -->
+    
+    <h1>JavaScript (parte 8)</h1>
+
+    <h2>Mudar atributos e estilos de elementos HTML</h2>
+
+    <h3>Mudar atributos (elemnto.atributo = novoValor)</h3>
+
+    <a href="https://github.com/" target="_blank" id="link">Link</a>
+
+    <h3>Mudar estilos de elementos HTML (elemento.style.propriedade = novoEstilo)</h3>
+
+    <div id="div-style">
+        <p>JavaScript pode mudar estilos de uma pagina web!</p>
+    </div>
+    
+    <h3>Receber valores através de inputs (elemento.value)</h3>
+    <div>
+        <label>Nome: </label>
+        <input type="text" id="nome-1" value="Maria Genia"><br>
+        <h5 id="frase-1">
+
+        </h5>
+    </div>
+
+    <h3>Eventos</h3>
+
+    <h4>Onclick</h4>
+    <div>
+        <label>Nome: </label>
+        <input type="text" id="nome-2"><br>
+        <h5 id="frase-2">
+
+        </h5>
+        <button id="botao-2" onclick="cumprimentar()">Cumprimente-me!</button>
+    </div>
+
+    <h4>Onchange</h4>
+    <div>
+        <label>Nome: </label>
+        <input type="text" id="nome-3">
+        <span style="margin: 2px; padding: 0;" id="frase-3">
+
+        </span>
+    </div>
+    <h4>Onchange</h4>
+    <div id="mouseover">
+        Coloque o mouse sobre mim.
+    </div>
+
+    <script src="./aula-20.js"></script>
+</body>
+</html>
