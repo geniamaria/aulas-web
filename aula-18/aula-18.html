@@ -34,6 +34,14 @@
             - trimEnd()
             - charAt(indice)
             - split(separador)
+        2. Métodos de Number
+            - toString()
+            - toExponential()
+            - toFixed()
+            - toPrecision()
+            - Number()
+            - parseFloat()
+            - parseInt()
     -->
 
     <h1>JavaScript (Parte 6)</h1>
@@ -197,7 +205,7 @@
     <div class="example">
         <p><strong>Exemplo:</strong></p>
         <code>
-            let texto = " Ola, Mundo!";<br>
+            let texto = "Ola, Mundo! ";<br>
             console.log(texto.trimEnd());<br><br>
 
             <b>Saída: </b> Ola, mundo!
@@ -245,5 +253,111 @@
         </code>
     </div>
 
+    <h2>Métodos de Number</h2>
+
+    <h3>toString()</h3>
+    <p>
+        <strong><code>toString()</code></strong> retorna um numero como uma String.
+    </p>
+    <div class="example">
+        <p><strong>Exemplo:</strong></p>
+        <code>
+            let x = 10;<br>
+            let y = x.toString();<br>
+            console.log(typeof y);<br><br>
+
+            <b>Saída: </b> string
+        </code>
+    </div>
+
+    <h3>toExponential()</h3>
+    <p>
+        <strong><code>toExponential()</code></strong> retorna uma string, com um numero arredondado e escrito usando uma notação exponencial.
+    </p>
+    <div class="example">
+        <p><strong>Exemplo:</strong></p>
+        <code>
+            let x = 9.656;<br>
+            let y = x.toExponential(2);<br>
+            console.log(y);<br><br>
+
+            <b>Saída: </b> 9.66e+0
+        </code>
+    </div>
+
+    <h3>toFixed()</h3>
+    <p>
+        <strong><code>toFixed()</code></strong> retorna uma string, com um numero fixo de casas decimais.
+    </p>
+    <div class="example">
+        <p><strong>Exemplo:</strong></p>
+        <code>
+            let x = 9.6567;<br>
+            let y = x.toFixed(2);<br>
+            console.log(y);<br><br>
+
+            <b>Saída: </b> 9.66
+        </code>
+    </div>
+
+    <h3>toPrecision()</h3>
+    <p>
+        <strong><code>toPrecision()</code></strong> retorna uma string, com um numero com um comprimento definido.
+    </p>
+    <div class="example">
+        <p><strong>Exemplo:</strong></p>
+        <code>
+            let x = 9.6567;<br>
+            let y = x.toPrecision(2);<br>
+            console.log(y);<br><br>
+
+            <b>Saída: </b> 9.7
+        </code>
+    </div>
+
+    <h3>Number()</h3>
+    <p>
+        <strong><code>Number()</code></strong> retorna um numero convertido a partir do seu argumento.
+    </p>
+    <div class="example">
+        <p><strong>Exemplo:</strong></p>
+        <code>
+            let x = "45";<br>
+            let y = Number(x);<br>
+            console.log(y);<br><br>
+
+            <b>Saída: </b> 45
+        </code>
+    </div>
+
+    <h3>parseFloat()</h3>
+    <p>
+        <strong><code>parseFloat()</code></strong> retorna um ponto flutuante convertido a partir do seu argumento.
+    </p>
+    <div class="example">
+        <p><strong>Exemplo:</strong></p>
+        <code>
+            let x = "12.56";<br>
+            let y = parseFloat(x);<br>
+            console.log(y);<br><br>
+
+            <b>Saída: </b> 12.56
+        </code>
+    </div>
+
+    <h3>parseInt()</h3>
+    <p>
+        <strong><code>parseInt()</code></strong> retorna um numero inteiro convertido a partir do seu argumento.
+    </p>
+    <div class="example">
+        <p><strong>Exemplo:</strong></p>
+        <code>
+            let x = 12.56;<br>
+            let y = parseInt(x);<br>
+            console.log(y);<br><br>
+
+            <b>Saída: </b> 12
+        </code>
+    </div>
 </body>
 </html>
