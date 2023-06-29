@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 21</title>
+    <style>
+        .exercicios {
+            background-color: rgba(0, 0, 255, 0.4);
+            border: solid 1px blue;
+            margin: 10px 2px;
+        }
+
+        .exercicios p,
+        .exercicios code {
+            font-weight: bold;
+        }
+
+        .example {
+            width: fit-content;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: lightgray;
+        }
+
+        .notes {
+            width: fit-content;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: burlywood;
+        }
+
+        .animacoes {
+            width: 30%;
+            height: 200px;
+            margin: 30px auto;
+            background-color: brown;
+            font-size: medium;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+    
+<body>
+    <!--
+        1. jQuery
+            - O operador $
+            - Selectores
+            - Adicionar e eliminar tags e textos
+            - Como verficar e adicionar estilos CSS
+            - Como adicionar animacoes basicas em paginas webs
+    -->
+    <h1>jQuery</h1>
+    <p>
+        <strong>jQuery</strong> e' uma biblioteca do JavaScript que nos permite escrever JavaScript
+        de forma mais rápida e facil. <br>
+        O jQuery e' composto por funções ja predefinidas prontas a usar.
+    </p>
+
+    <h2>Incluir a biblioteca jQuery em paginas web</h2>
+
+    <p>
+        Para incluir a biblioteca jQuery em paginas web, devemos baixa-la no website da jQuery (https://jquery.com/download/)
+        e incluir no projecto como se estivesse a incluir um ficheiro JavaScript.
+    </p>
+
+    <h2>O operador $</h2>
+    <p>
+        O operador $ serve para selecionar elementos HTML. <br>
+        Toda a instrucao usando jQuery deve iniciar com o caractere <strong>$</strong>.
+    </p>
+
+    <h2>Selectores</h2>
+
+    <h3>Selector de tag</h3>
+
+    <p>
+        <strong>Sintaxe:</strong> <br>
+        $('tag')
+    </p>
+    <div class="example">
+        <span class="selector-tag">
+
+        </span>
+    </div>
+
+    <h3>Selector de classe</h3>
+
+    <p>
+        <strong>Sintaxe:</strong> <br>
+        $('.nomeClasse')
+    </p>
+
+    <div class="example">
+        <p class="selector-classe">
+
+        </p>
+    </div>
+
+    <h3>Selector de id</h3>
+
+    <p>
+        <strong>Sintaxe:</strong> <br>
+        $('#nomeID')
+    </p>
+
+    <div class="example">
+        <p id="selector-id">
+
+        </p>
+    </div>
+
+    <h3>Selector de descendência</h3>
+
+    <p>
+        <strong>Sintaxe:</strong> <br>
+        $('ascendente descencendente')
+    </p>
+
+    <div class="example">
+        <p>
+            Eu sou um texto digitado directamente no HTML <br>
+            <span id="selector-desc">
+
+            </span>
+        </p>
+        <p id="selector-desc">
+
+        </p>
+    </div>
+
+    <h3>Selector de relacao pai e filho</h3>
+
+    <p>
+        <strong>Sintaxe:</strong> <br>
+        $('pai > filho')
+    </p>
+
+    <div class="example">
+        <p>
+            Eu sou um texto digitado directamente no HTML <br>
+            <span>
+
+            </span>
+        </p> <br>
+        <span>
+
+        </span>
+    </div>
+
+    <h3>Outros tipos de selectores</h3>
+
+    <h4>even</h4>
+    <P>
+        Seleciona apenas os elementos pares de todos os elementos encontrados. <br>
+        <strong>Sintaxe</strong> <br>
+        <code>$('selector:even')</code>
+
+    </P>
+    <div class="example">
+        <p class="outro-selector-par">Um paragrafo escrito directamente usando HTML</p>
+        <p class="outro-selector-par">Um paragrafo escrito directamente usando HTML</p>
+        <p class="outro-selector-par">Um paragrafo escrito directamente usando HTML</p>
+        <p class="outro-selector-par">Um paragrafo escrito directamente usando HTML</p>
+        <p class="outro-selector-par">Um paragrafo escrito directamente usando HTML</p>
+        <p class="outro-selector-par">Um paragrafo escrito directamente usando HTML</p>
+        <p class="outro-selector-par">Um paragrafo escrito directamente usando HTML</p>
+        <p class="outro-selector-par">Um paragrafo escrito directamente usando HTML</p>
+    </div>
+
+    <h4>odd</h4>
+    <P>
+        Seleciona apenas os elementos impares de todos os elementos encontrados. <br>
+        <strong>Sintaxe</strong> <br>
+        <code>$('selector:odd')</code>
+
+    </P>
+    <div class="example">
+        <p class="outro-selector-impar">Um paragrafo escrito directamente usando HTML</p>
+        <p class="outro-selector-impar">Um paragrafo escrito directamente usando HTML</p>
+        <p class="outro-selector-impar">Um paragrafo escrito directamente usando HTML</p>
+        <p class="outro-selector-impar">Um paragrafo escrito directamente usando HTML</p>
+        <p class="outro-selector-impar">Um paragrafo escrito directamente usando HTML</p>
+        <p class="outro-selector-impar">Um paragrafo escrito directamente usando HTML</p>
+        <p class="outro-selector-impar">Um paragrafo escrito directamente usando HTML</p>
+        <p class="outro-selector-impar">Um paragrafo escrito directamente usando HTML</p>
+    </div>
+
+    <h4>first</h4>
+    
+    <div class="exercicios">
+        TPC
+    </div>
+    <h4>last</h4>
+    <div class="exercicios">
+        TPC
+    </div>
+
+    <h2>Adicionar, modificar e eliminar Tags e Textos</h2>
+
+    <h3>Adicionar Tags</h3>
+
+    <P>
+        <strong>Sintaxe</strong> <br>
+        <code>$('SelectorPai').append('tagFilho')</code>
+
+    </P>
+    <div class="example" id="adicionar-tag">
+
+    </div>
+
+    <h3>Adicionar Texto</h3>
+
+    <P>
+        <strong>Sintaxe</strong> <br>
+        <code>$('selector').text('texto')</code>
+
+    </P>
+    <div class="example" id="adicionar-texto">
+        <p>
+
+        </p>
+    </div>
+
+    <h3>Adicionar Elementos</h3>
+
+    <P>
+        <strong>Sintaxe</strong> <br>
+        <code>$('selector').remove()</code>
+
+    </P>
+    <div class="example">
+        <p id="remover-elemento">
+            Eu sou um paragrafo que serei removido 🥲
+        </p>
+        <p>
+            Existia um paragrafo em cima de mim que foi removido usando jQuery
+        </p>
+    </div>
+
+    <h3>Verificar e adicionar estilos CSS</h3>
+
+    <h4>Verificar Estilos</h4>
+
+    <P>
+        <strong>Sintaxe</strong> <br>
+        <code>
+            $('selector').css({
+                'propriedade1' : 'valor1',
+                'propriedade2' : 'valor2',
+                .....
+                .....
+            });
+        </code>
+    </P>
+
+    <div class="example" id="modificar-css">
+        <p style="color: red;">Eu sou o primeiro paragrafo</p>
+        <p>Eu sou o ultimo  (estilizado usando jQuery)</p>
+    </div>
+
+    <h2>Animacoes basicas com jQuery</h2>
+
+    <h3>hide</h3>
+
+    <div class="animacoes" id="hide">
+        Clique em mim e irei desaparecer.
+    </div>
+
+    <h3>show</h3>
+    <div style="height: fit-content; background-color: green;" class="animacoes" id="show-click">
+        Clique e veja o numero da sorte de hoje.
+    </div>
+    <div class="animacoes" id="show">
+        
+    </div>
+
+    <h3>slideDown</h3>
+    <div style="height: fit-content; background-color: green;" class="animacoes" id="slideDown-click">
+        Clique em mim.
+    </div>
+    <div class="animacoes" id="slideDown">
+        Ola, Maria! 👍👍👍
+    </div>
+
+    <h3>slideUp</h3>
+    <div class="exercicios">
+        TPC
+    </div>
+
+    <h3>fadeIn</h3>
+    <div style="height: fit-content; background-color: green;" class="animacoes" id="fadeIn-click">
+        Clique em mim.
+    </div>
+    <div class="animacoes" id="fadeIn">
+        Ola, Maria! 👍👍👍
+    </div>
+
+    <h3>fadeOut</h3>
+    <div class="exercicios">
+        TPC
+    </div>
+
+
+    <script src="./jquery-3.7.0.js"></script>
+    <script src="./aula-21.js"></script>
+</body>
+</html>
