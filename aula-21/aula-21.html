@@ -47,7 +47,7 @@
         }
     </style>
 </head>
-    
+
 <body>
     <!--
         1. jQuery
@@ -67,7 +67,8 @@
     <h2>Incluir a biblioteca jQuery em paginas web</h2>
 
     <p>
-        Para incluir a biblioteca jQuery em paginas web, devemos baixa-la no website da jQuery (https://jquery.com/download/)
+        Para incluir a biblioteca jQuery em paginas web, devemos baixa-la no website da jQuery
+        (https://jquery.com/download/)
         e incluir no projecto como se estivesse a incluir um ficheiro JavaScript.
     </p>
 
@@ -194,13 +195,46 @@
     </div>
 
     <h4>first</h4>
-    
+
     <div class="exercicios">
         TPC
+        <P>
+            Seleciona apenas o elemento de todo o elemento encontrado. <br>
+            <strong>Sintaxe</strong> <br>
+            <code>$('selector:first')</code>
+
+        </P>
+        <div class="example">
+            <p>Um paragrafo escrito directamente usando HTML</p>
+            <p class="outro-selector-first">Um paragrafo escrito directamente usando HTML</p>
+            <p>Um paragrafo escrito directamente usando HTML</p>
+            <p>Um paragrafo escrito directamente usando HTML</p>
+            <p>Um paragrafo escrito directamente usando HTML</p>
+            <p>Um paragrafo escrito directamente usando HTML</p>
+            <p>Um paragrafo escrito directamente usando HTML</p>
+            <p>Um paragrafo escrito directamente usando HTML</p>
+        </div>
+
     </div>
     <h4>last</h4>
     <div class="exercicios">
         TPC
+        <P>
+            Seleciona apenas o elemento de todo o elemento encontrado. <br>
+            <strong>Sintaxe</strong> <br>
+            <code>$('selector:last')</code>
+
+        </P>
+        <div class="example">
+            <p>Um paragrafo escrito directamente usando HTML</p>
+            <p>Um paragrafo escrito directamente usando HTML</p>
+            <p>Um paragrafo escrito directamente usando HTML</p>
+            <p>Um paragrafo escrito directamente usando HTML</p>
+            <p>Um paragrafo escrito directamente usando HTML</p>
+            <p>Um paragrafo escrito directamente usando HTML</p>
+            <p>Um paragrafo escrito directamente usando HTML</p>
+            <p class="outro-selector-last">Um paragrafo escrito directamente usando HTML</p>
+        </div>
     </div>
 
     <h2>Adicionar, modificar e eliminar Tags e Textos</h2>
@@ -263,7 +297,7 @@
 
     <div class="example" id="modificar-css">
         <p style="color: red;">Eu sou o primeiro paragrafo</p>
-        <p>Eu sou o ultimo  (estilizado usando jQuery)</p>
+        <p>Eu sou o ultimo (estilizado usando jQuery)</p>
     </div>
 
     <h2>Animacoes basicas com jQuery</h2>
@@ -279,7 +313,7 @@
         Clique e veja o numero da sorte de hoje.
     </div>
     <div class="animacoes" id="show">
-        
+
     </div>
 
     <h3>slideDown</h3>
@@ -293,6 +327,12 @@
     <h3>slideUp</h3>
     <div class="exercicios">
         TPC
+        <div style="height: fit-content; background-color: green;" class="animacoes" id="slideUp-click">
+            Clique em mim.
+        </div>
+        <div class="animacoes" id="slideUp">
+            Ola, Maria! ✌️✌️✌️✌️
+        </div>
     </div>
 
     <h3>fadeIn</h3>
@@ -306,10 +346,17 @@
     <h3>fadeOut</h3>
     <div class="exercicios">
         TPC
+         <div style="height: fit-content; background-color: green;" class="animacoes" id="fadeOut-click">
+        Clique em mim.
+    </div>
+    <div class="animacoes" id="fadeOut">
+        Ola, Maria! 👍👍👍
+    </div>
     </div>
 
 
     <script src="./jquery-3.7.0.js"></script>
     <script src="./aula-21.js"></script>
 </body>
+
 </html>

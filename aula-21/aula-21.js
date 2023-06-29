@@ -20,6 +20,12 @@ $('.outro-selector-par:even').text('oiiii');
 //selecionando apenas os elementos impares dos elementos encontrados
 $('.outro-selector-impar:odd').text('oiiii');
 
+//selecionando apenas o primeiro  elemento encontrado
+$('.outro-selector-first:first').text('olo');
+
+//selecionando apenas o ultimo  elemento encontrado
+$('.outro-selector-last:last').text('olo');
+
 //adicionando tags usando jQuery
 $('#adicionar-tag').append('<h1>Meu titulo jQuery</h1>');
 
@@ -57,14 +63,20 @@ $("#show-click").click(function () {
 //exemplo da animacao slideDown.
 $('#slideDown').hide();
 $("#slideDown-click").click(function () { 
-    $('#slideDown').slideDown(10000);
+    $('#slideDown').slideDown(70000);
 });
+
+//exemplo da animacao slideUp.
+$('#slideUp').slideUp(1000);//quandofazemos o relode da pagina acotece o slideUp.
 
 //exemplo da animacao fadeIn.
 $('#fadeIn').hide();
 $("#fadeIn-click").click(function () { 
     $('#fadeIn').fadeIn(3000);
 });
+
+//exemplo da animacao fadeOut.
+$('#fadeOut').fadeOut(7000);
 
 
 
