@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 22</title>
+    <style>
+        .exercicios {
+            background-color: rgba(0, 0, 255, 0.4);
+            border: solid 1px blue;
+            margin: 10px 2px;
+        }
+
+        .exercicios p,
+        .exercicios code {
+            font-weight: bold;
+        }
+
+        .example {
+            width: fit-content;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: lightgray;
+        }
+
+        .notes {
+            width: fit-content;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: burlywood;
+        }
+
+        .div, #db-div, .hover {
+            width: fit-content;
+            margin: 5px;
+            background-color: brown;
+            font-size: medium;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            padding: 4px 8px;
+            border-radius: 10px;
+        }
+        #load-div {
+            width: 30%;
+            margin: 20px auto;
+            background-color: brown;
+            font-size: medium;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            padding: 4px 8px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        1. Eventos
+          - documentos
+            - load
+          - mouse
+            - click
+            - mousehover
+            - mouseout
+            - dbclick
+          - teclado
+            - keypress
+          - formulário
+        2. Animações
+
+    -->
+    <div id="load-div"></div>
+    <h1>Eventos</h1>
+    <p>
+        Eventos sao accoes que ocorrem quando o usuario interage com a pagina web.
+    </p>
+    <div class="example">
+        <p><strong>Sintaxe:</strong></p>
+        <code>
+            $(selector).evento(function() { <br>
+                //o código que sera executado quando o elemento e' acionado. <br>
+            });
+        </code>
+    </div>
+    <div class="example">
+        <p><strong>Exemplo:</strong></p>
+        <code>
+            $("#div").click(function() { <br>
+                $("#div").text('Botao clicado com sucesso!') <br>
+            });
+        </code>
+    </div>
+    <p style="margin-top: 10px;"><strong>Resultado:</strong></p>
+    <div class="div">Clique-me</div>
+
+    <h2>Eventos Gerados pelo documento</h2>
+
+    <h3>load</h3>
+    <p>
+        Este evento e' acionado quando a pagina e' carregada.
+    </p>
+    <div class="example">
+        <p><strong>Exemplo:</strong></p>
+        <code>
+            $(window).on('load', function() { <br>
+                $("#load-div").hide(); <br>
+                let name = prompt("Introduza o seu nome"); <br>
+                $("#load-div").text(`Ola, ${name}. Bem-vindo ao meu site`); <br>
+                $("#load-div").fadeIn(3000); <br>
+            });
+        </code>
+    </div>
+    <p style="margin-top: 10px;"><strong>Resultado:</strong> (No topo da pagina)</p>
+   
+    <h2>Eventos Gerados pelo mouse</h2>
+
+    <h3>click</h3>
+
+    <p>
+        Este evento e' acionado quando clicamos em um elemento
+    </p>
+    <div class="example">
+        <p><strong>Exemplo:</strong></p>
+        <code>
+            $("#div").click(function() { <br>
+                $("#div").text('Botao clicado com sucesso!') <br>
+            });
+        </code>
+    </div>
+    <p style="margin-top: 10px;"><strong>Resultado:</strong></p>
+    <div class="div">Clique-me</div>
+
+    <h3>dbclick</h3>
+
+    <p>
+        Este evento e' acionado quando clicamos duas vezes em um elemento
+    </p>
+    <div class="example">
+        <p><strong>Exemplo:</strong></p>
+        <code>
+            $("#db-div").dbclick(function() { <br>
+                $("#db-div").text('Voce clicou em mim duas vezes!') <br>
+            });
+        </code>
+    </div>
+    <p style="margin-top: 10px;"><strong>Resultado:</strong></p>
+    <div id="db-div">Clique em mim duas vezes.</div>
+
+    <h3>MouseOver</h3>
+
+    <p>
+        Este evento e; acionado quando colocamos o mouse por cima de um elemnto
+    </p>
+    <div class="example">
+        <p><strong>Exemplo:</strong></p>
+        <code>
+            $("#hover-div").MouseOver(function() { <br>
+                $("#hover-div").text('O mouse esta por cima deste elemento!') <br>
+            });
+        </code>
+    </div>
+    <p style="margin-top: 10px;"><strong>Resultado:</strong></p>
+    <div class="hover">O mouse nao esta por cima deste elemento!</div>
+
+
+    <h3>MouseLeave</h3>
+
+    <p>
+        Este evento e; acionado quando tiramos o mouse de cima de um elemnto
+    </p>
+    <div class="example">
+        <p><strong>Exemplo:</strong></p>
+        <code>
+            $("#hover-div").mouseleave(function() { <br>
+                $("#hover-div").text('O mouse nao esta por cima deste elemento!') <br>
+            });
+        </code>
+    </div>
+    <p style="margin-top: 10px;"><strong>Resultado:</strong></p>
+    <div class="hover">O mouse esta por cima deste elemento!</div>
+
+
+    <h2>Eventos Gerados pelo teclado</h2>
+
+    <h3>keypress</h3>
+    <div class="example">
+        <p><strong>Exemplo:</strong></p>
+        <code>
+            $("#hover-div").mouseleave(function() { <br>
+                $("#hover-div").text('O mouse nao esta por cima deste elemento!') <br>
+            });
+        </code>
+    </div>
+    <p style="margin-top: 10px;"><strong>Resultado:</strong></p>
+    <input type="text" id="pesquisar" placeholder="pesquisar">
+    <p><strong>Resultado: </strong><span id="resultado">oiiii</span></p>
+
+    //TPC fazer uma inspensao seria!
+    //baixa Chrome
+
+    <script src="./jquery-3.7.0.js"></script>
+    <script src="./aula-22.js"></script>
+</body>
+</html>
