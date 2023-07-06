@@ -67,7 +67,10 @@ $("#slideDown-click").click(function () {
 });
 
 //exemplo da animacao slideUp.
-$('#slideUp').slideUp(1000);//quandofazemos o relode da pagina acotece o slideUp.
+$('#slideUp').show();
+$("#slideUp-click").click(function () { 
+    $('#slideUp').slideUp(3000);
+});
 
 //exemplo da animacao fadeIn.
 $('#fadeIn').hide();
@@ -76,7 +79,10 @@ $("#fadeIn-click").click(function () {
 });
 
 //exemplo da animacao fadeOut.
-$('#fadeOut').fadeOut(7000);
+$('#fadeOut').show();
+$('#fadeOut-click').click(function () { 
+    $('#fadeOut').fadeOut(3000);
+});
 
 
 
