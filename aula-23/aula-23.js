@@ -1,4 +1,4 @@
-/*
+
 //Exemplo da animacao togle
 
 $("#toggle-click").click(function () { 
@@ -13,9 +13,19 @@ $("#slide-toggle-click").click(function () {
 });
 
 //Exemplo fadeToggle
+$("#slide-toggle-click").click(function () { 
+    $("#slide-toggle").fadeToggle(2000);
+    
+});
 
-TPC
-*/
+
+$("#slide-toggle-click").click(function () { 
+    $("#fade-toggle-click").fadeToggle();
+   
+});
+
+
+
 
 //Exemplo da animacao animate
 $("#mostrar").show();
