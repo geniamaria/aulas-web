@@ -1,0 +1,42 @@
+section {
+    width: 80%;
+    height: 600px;
+    border: solid 1px gray;
+    background-color: lightgray;
+    margin: 50px auto;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+section div {
+    display: flex;
+    height: 100%;
+}
+#close {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 0 10px 0 0;
+    margin: 0;
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+aside {
+    background-color: chocolate;
+    width: 200px;
+    height: 100%;
+    position: relative;
+    left: -200px;
+}
+main {
+    background-color: white;
+    color: chocolate;
+    width: calc(100% - 200px);
+}
+main h1 {
+    font-size: 2rem;
+    text-align: center;
+    height: 100px;
+}

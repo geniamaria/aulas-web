@@ -63,7 +63,7 @@ $("#show-click").click(function () {
 //exemplo da animacao slideDown.
 $('#slideDown').hide();
 $("#slideDown-click").click(function () { 
-    $('#slideDown').slideDown(70000);
+    $('#slideDown').slideDown(3000);
 });
 
 //exemplo da animacao slideUp.

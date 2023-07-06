@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula-22</title>
+    <link rel="stylesheet" href="./aula-23.css">
+    <style>
+        body {
+            padding-bottom: 100px;
+        }
+        .exercicios {
+            background-color: rgba(0, 0, 255, 0.4);
+            border: solid 1px blue;
+            margin: 10px 2px;
+        }
+
+        .exercicios p,
+        .exercicios code {
+            font-weight: bold;
+        }
+
+        .example {
+            width: fit-content;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: lightgray;
+        }
+
+        .notes {
+            width: fit-content;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: burlywood;
+        }
+
+        .animacoes {
+            width: 30%;
+            height: 200px;
+            margin: 30px auto;
+            background-color: brown;
+            font-size: medium;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <!--
+        1. Animacoes (continuacao)
+            - toggle()
+            - fadeToggle()
+            - slideToggle()
+            - animate()
+    -->
+
+    <h1>Animacoes (Continuacao)</h1>
+
+    <h2>toggle</h2>
+    <p>
+        o <code>toglee</code> faz um swich entre o hide e o show
+    </p>
+    <div style="height: fit-content; background-color: green;" class="animacoes" id="toggle-click">
+        Botao toggle
+    </div>
+    <div class="animacoes" id="toggle">
+        Um exemplo da animacao toggle
+    </div>
+
+    <h2>slideToggle</h2>
+    <p>
+        o <code>slideToglee</code> faz um swich entre o slideDown e o slideUp
+    </p>
+    <div style="height: fit-content; background-color: green;" class="animacoes" id="slide-toggle-click">
+        Botao slideToggle
+    </div>
+    <div class="animacoes" id="slide-toggle">
+        Um exemplo da animacao slideToggle
+    </div>
+
+    <h3>fadeToggle</h3>
+    TPC
+
+
+    <h2>animate (animacoes usando css)</h2>
+
+    <p>
+        O <code>animate</code> e' usado para criar animacoes mais completas usando ate CSS.
+    </p>
+
+    <div class="example">
+        <p><strong>Sintaxe: </strong></p>
+        <code>
+            $(selector).animate(propriedades, duracao);
+        </code>
+    </div>
+    <div class="example">
+        <p><strong>Exemplo: </strong></p>
+    </div>
+
+    <section>
+        <p id="close">
+            <span id="mostrar">=</span>
+            <span id="ocultar">x</span>
+        </p>
+        <div>
+            <aside>
+
+            </aside>
+            <main>
+                <h1>Bem-Vindo ao nosso website</h1>
+            </main>
+        </div>
+    </section>
+
+    <h2>Animacoes que iniciam depois de uma outra animacao</h2>
+    <div class="example">
+        <p><strong>Sintaxe: </strong></p>
+        <code>
+            $(selector).animate(propriedades, duracao, function() {
+                //as animacoes que irao ocorrer apos a primeira animacao
+            });
+        </code>
+    </div>
+
+    <script src="./jquery-3.7.0.js"></script>
+    <script src="./aula-23.js"></script>
+</body>
+</html>
