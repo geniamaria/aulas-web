@@ -80,7 +80,7 @@ $("#fadeIn-click").click(function () {
 
 //exemplo da animacao fadeOut.
 $('#fadeOut').show();
-$('#fadeOut-click').click(function () { 
+$('gi#fadeOut-click').click(function () { 
     $('#fadeOut').fadeOut(3000);
 });
 
