@@ -13,18 +13,10 @@ $("#slide-toggle-click").click(function () {
 });
 
 //Exemplo fadeToggle
-$("#slide-toggle-click").click(function () { 
-    $("#slide-toggle").fadeToggle(2000);
-    
+//$('#fadeIn').hide();
+$("#fadeIn-click").click(function () { 
+    $('#fadeIn').fadeToggle(3000);
 });
-
-
-$("#slide-toggle-click").click(function () { 
-    $("#fade-toggle-click").fadeToggle();
-   
-});
-
-
 
 
 //Exemplo da animacao animate
