@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 24</title>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <style>
+        body {
+            padding: 20px 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        1. Componentes UI (User Interface - Interface de Usuario)
+            - jQuery UI
+                - Widgets
+                - Efeitos
+                _ Interacoes
+            - Daisy UI (UI usada com TailwindCSS)
+    -->
+
+    <h1>Componentes UI</h1>
+
+    <h2>jQuery UI</h2>
+    <p>
+        jQuery UI e' uma biblioteca que nos fornece varios componentes pre-definidos que podemos reutilizar
+        em nossas paginas Web. <br>
+        O jQuery UI e' divido em 3 partes:
+    </p>
+
+    <h3>Widgets</h3>
+    <p>
+        Sao componentes prontos para serem usados em nossas paginas web.
+    </p>
+    <p>
+        Para usar o jQuery UI devemos baixar a biblioteca atraves do link 
+    </p>
+
+    <h3>Exemplo do widget Tabs</h3>
+
+    <h4>O que sao HTML, CSS, JavaScript?</h4>
+    <div id="tabs">
+        <ul>
+          <li><a href="#tabs-1">HTML</a></li>
+          <li><a href="#tabs-2">CSS</a></li>
+          <li><a href="#tabs-3">JavaScript</a></li>
+          <li><a href="#tabs-4">PHP</a></li>
+        </ul>
+        <div id="tabs-1">
+          <p>Definicao de HTML</p>
+        </div>
+        <div id="tabs-2">
+          <p>Definicao de CSS</p>
+        </div>
+        <div id="tabs-3">
+          <p>Definicao JavaScript</p>
+        </div>
+        <div id="tabs-4">
+            <p>Definicao PHP</p>
+          </div>
+    </div>
+
+    <h3>Exemplo do Widget Menu</h3>
+    <ul id="menu">
+        <li class="ui-state-disabled"><div>Toys (n/a)</div></li>
+        <li><div>Books</div></li>
+        <li><div>Clothing</div></li>
+        <li><div>Electronics</div>
+          <ul>
+            <li class="ui-state-disabled"><div>Home Entertainment</div></li>
+            <li><div>Car Hifi</div></li>
+            <li><div>Utilities</div></li>
+          </ul>
+        </li>
+        <li><div>Movies</div></li>
+        <li><div>Music</div>
+          <ul>
+            <li><div>Rock</div>
+              <ul>
+                <li><div>Alternative</div></li>
+                <li><div>Classic</div></li>
+              </ul>
+            </li>
+            <li><div>Jazz</div>
+              <ul>
+                <li><div>Freejazz</div></li>
+                <li><div>Big Band</div></li>
+                <li><div>Modern</div></li>
+              </ul>
+            </li>
+            <li><div>Pop</div></li>
+          </ul>
+        </li>
+        <li class="ui-state-disabled"><div>Specials (n/a)</div></li>
+      </ul>
+
+      <h3>Efeitos</h3>
+        <p>
+            Sao animacoes mais sofisticadas.
+        </p>
+
+        <h4>Exemplo do efeito color Animation</h4>
+
+        <div class="toggler">
+            <div id="effect" class="ui-widget-content ui-corner-all">
+              <h3 class="ui-widget-header ui-corner-all">Animate</h3>
+              <p>
+                Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.
+              </p>
+            </div>
+          </div>
+           
+          <button id="button" class="ui-state-default ui-corner-all">Toggle Effect</button>
+
+          <h3>Interacoes</h3>
+          <p>
+              Sao efeitos causados pelo mouse que nos permitem ajustar elementos, 
+              redimensionar elementos, entre outros.
+          </p>
+
+          <h4>Exempplo da Interacao Resizable</h4>
+          <div id="resizable" class="ui-widget-content">
+            <h3 class="ui-widget-header">Resizable</h3>
+          </div>
+
+          <h4>Exemplo da interacao Sortable</h4>
+          <ul id="sortable">
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
+          </ul>
+
+    <script src="./js/jquery-3.7.0.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/aula-24.js"></script>
+</body>
+</html>
